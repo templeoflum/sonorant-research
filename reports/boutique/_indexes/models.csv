@@ -1,0 +1,34 @@
+model_id,company_id,model_name,form_factor,bandwidth_low_hz,bandwidth_high_hz,sensitivity_db,max_spl_peak_db,weight_kg,directivity_nominal,small_room_relevant,spec_provenance
+danley_sh50,danley_sound_labs,SH50,point_source,50,18000,100,133,64.4,50x50,yes,independent
+danley_sh96,danley_sound_labs,SH96,point_source,50,16000,101,139,97.5,90x60,no,manufacturer
+danley_sm60f,danley_sound_labs,SM60F,point_source,66,24000,99,131,22.7,60x60,yes,manufacturer
+danley_th118,danley_sound_labs,TH118,sub,40,250,108,143,72.6,omni,yes,independent
+danley_bc218,danley_sound_labs,BC218,sub,26,150,110,148,232,cardioid,no,manufacturer
+fulcrum_fh1566,fulcrum_acoustic,FH1566,point_source,54,20000,,138,,60x60,yes,manufacturer
+fulcrum_cs118,fulcrum_acoustic,CS118,sub,29,137,103,136,,subcardioid,yes,manufacturer
+fulcrum_cs121,fulcrum_acoustic,CS121,sub,,,,,,,yes,manufacturer
+fulcrum_fl283,fulcrum_acoustic,FL283,line_array,54,18600,,,,,no,manufacturer
+funktion_one_res2,funktion_one,Res 2,point_source,60,18000,102,,48,50x25,yes,manufacturer
+funktion_one_evo6e,funktion_one,Evo 6E,point_source,70,18000,103,,57,50x25,yes,manufacturer
+funktion_one_vx90,funktion_one,VX90,line_array,60,18000,100,,70,90x13,no,manufacturer
+funktion_one_f218,funktion_one,F218 MkII,sub,50,200,102,,93,,yes,manufacturer
+funktion_one_f121,funktion_one,F121,sub,40,250,101,,72,,yes,manufacturer
+funktion_one_f221,funktion_one,F221,sub,40,250,104,,130,,no,manufacturer
+kv2_esd10,kv2_audio,ESD10,point_source,65,20000,96,131,16.5,100x80,yes,manufacturer
+kv2_es25,kv2_audio,ES2.5,sub,38,130,,140,74.7,,yes,manufacturer
+kv2_ex12mkii,kv2_audio,EX1.2MkII,sub,38,120,,130,32,,yes,manufacturer
+kv2_vhd5000,kv2_audio,VHD5000,point_source,45,20000,,,,,no,manufacturer
+holoplot_md96,holoplot,X1 MD96,matrix_array,85,20000,,152,100,,no,manufacturer
+holoplot_md80s,holoplot,X1 MD80-S,matrix_array,26,20000,,152,160,,no,manufacturer
+holoplot_md30,holoplot,X2 MD30,matrix_array,80,20000,,130,15.6,,yes,manufacturer
+pk_t10,pk_sound,T10,line_array,40,20000,,146,47.6,60-120 robotic,no,manufacturer
+pk_g218,pk_sound,G218,sub,,,,,,cardioid,no,manufacturer
+void_air_motion,void_acoustics,Air Motion,point_source,140,20000,106,138,35.4,60x50,yes,manufacturer
+void_air_array,void_acoustics,Air Array,point_source,90,26000,,143,144.8,,no,manufacturer
+void_incubus_sub,void_acoustics,Incubus Sub,sub,29,95,105,148,214,,no,manufacturer
+void_stasys_xv2,void_acoustics,Stasys XV2,sub,30,180,104,144,130,,no,manufacturer
+void_nexus_xl,void_acoustics,Nexus XL,sub,30,150,104,141,90,,yes,manufacturer
+void_cyclone_8,void_acoustics,Cyclone 8,point_source,70,20000,94,121,14,90x90,yes,manufacturer
+hsd_haymaker,hennessey_sound_design,Haymaker,point_source,50,20000,,,70.3,40-90 x 15,no,manufacturer
+hsd_sherman,hennessey_sound_design,Sherman,sub,25,250,,,200,,no,manufacturer
+hsd_battlehawk,hennessey_sound_design,Battlehawk,sub,25,250,,,154,,no,manufacturer

@@ -1,0 +1,222 @@
+{
+  "company_id": "hennessey_sound_design",
+  "name": "Hennessey Sound Design",
+  "aka": ["HSD Sound Systems", "HSD"],
+  "founded_year": 2014,
+  "hq_country": "USA",
+  "hq_city": "Fall River, Massachusetts",
+  "key_people": [
+    {"name": "Bob Trinanes", "role": "Founder", "years": "2014-present"},
+    {"name": "Sean Hennessey", "role": "Co-Founder", "years": "2014-present"}
+  ],
+  "ownership": "private",
+  "lineage": {
+    "predecessors": [],
+    "spin_offs": [],
+    "notes": "Originally Hennessey Sound Designs, rebranded to HSD Sound Systems"
+  },
+  "philosophy": {
+    "tags": ["bass_culture", "horn_loaded", "festival_optimized", "diy_ethos", "custom_builds"],
+    "summary": "HSD specializes in high-output horn-loaded systems for EDM festival circuit. Full in-house manufacturing: woodworking, driver integration, polyurea coating, R&D. Target: bass culture events requiring extreme LF output. Quality components (B&C, faitalPRO, BMS, 18sound, Celestion TSQ) at accessible pricing. TEF25 testing for quality assurance.",
+    "notable_quotes": [
+      {
+        "quote": "People began calling, asking who built it, and that's how Hennessey Sound Design started – almost by accident.",
+        "person": "Bob Trinanes",
+        "year": null,
+        "source": "https://www.svconline.com/the-wire/leading-edm-festival-loudspeaker-designer-hsd-sound-systems-upgrades-flagship-sherman-and-tomahawk-subwoofers-with-celestion-tsq-drivers"
+      },
+      {
+        "quote": "Can it survive a week at Burning Man?",
+        "person": "Bob Trinanes (durability benchmark)",
+        "year": null,
+        "source": "https://www.svconline.com/the-wire/leading-edm-festival-loudspeaker-designer-hsd-sound-systems-upgrades-flagship-sherman-and-tomahawk-subwoofers-with-celestion-tsq-drivers"
+      }
+    ]
+  },
+  "supply_chain": {
+    "drivers_in_house": false,
+    "driver_vendors": ["Celestion (TSQ series)", "B&C", "faitalPRO", "BMS", "18sound", "Eminence"],
+    "amp_dsp_partners": ["HSD KP Series", "HSD KD Series (in-house amplifiers)"]
+  },
+  "standards_cert": [],
+  "ip_patents": [],
+  "spec_provenance_note": "All specifications from manufacturer website and press releases. No independent third-party measurements identified. Driver specs from Celestion press releases.",
+  "products": {
+    "point_source": [
+      {
+        "model_id": "hsd_haymaker",
+        "name": "Haymaker",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["cone_18", "cone_10", "compression_1in"],
+          "hf_loading": ["horn_modular_waveguide"],
+          "lf_alignment": ["horn_loaded"],
+          "directivity_methods": ["modular_waveguide"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 18, "count": 1},
+          {"position": "MF", "size_in": 10, "count": 1},
+          {"position": "HF", "size_in": 1, "count": 4, "type": "compression"}
+        ],
+        "key_specs": {
+          "bandwidth_hz_3db": [60, 20000],
+          "bandwidth_hz_10db": [50, 20000],
+          "h_coverage_deg": [40, 90],
+          "v_coverage_deg": 15,
+          "dimensions_in": {"w": 27, "h": 32, "d": 27},
+          "weight_lbs": 155,
+          "weight_kg": 70.3,
+          "connector": "2x NL8",
+          "notes": "3-way tri-amped; modular waveguide (40/60/90 deg); 16x M10 fly points"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ],
+    "subwoofers": [
+      {
+        "model_id": "hsd_sherman",
+        "name": "Sherman",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_24"],
+          "lf_alignment": ["front_loaded_horn"],
+          "directivity_methods": ["horn_loaded"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 24, "count": 1, "model": "Celestion TSQ2460", "power_w_cont": 4800, "sensitivity_db": 98}
+        ],
+        "key_specs": {
+          "bandwidth_hz_3db": [28, 150],
+          "bandwidth_hz_10db": [25, 250],
+          "f_low_corner_hz": 29,
+          "dimensions_in": {"w": 30, "h": 48, "d": 72},
+          "weight_lbs": 440,
+          "weight_kg": 200,
+          "connector": "2x NL4",
+          "notes": "Flagship horn-loaded sub; equivalent output to 2x BattleAxe"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      },
+      {
+        "model_id": "hsd_battlehawk",
+        "name": "Battlehawk",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_21"],
+          "lf_alignment": ["front_loaded_horn"],
+          "directivity_methods": ["horn_loaded"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 21, "count": 1, "model": "Eminence"}
+        ],
+        "key_specs": {
+          "bandwidth_hz_3db": [28, 150],
+          "bandwidth_hz_10db": [25, 250],
+          "dimensions_in": {"w": 30, "h": 60, "d": 48},
+          "weight_lbs": 340,
+          "weight_kg": 154,
+          "connector": "2x NL4",
+          "notes": "Front-loaded horn; touring/venue applications"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      },
+      {
+        "model_id": "hsd_tomahawk",
+        "name": "Tomahawk",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_21"],
+          "lf_alignment": ["front_loaded_horn"],
+          "directivity_methods": ["horn_loaded"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 21, "count": 1, "model": "Celestion TSQ2145", "power_w_cont": 3600, "sensitivity_db": 97}
+        ],
+        "key_specs": {
+          "notes": "Compact, scalable; truck-pack friendly; touring optimized"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "low"
+      }
+    ]
+  },
+  "case_studies": [
+    {
+      "case_id": "electric_forest_hsd",
+      "venue": {"name": "Electric Forest Festival", "city": "Rothbury", "country": "USA"},
+      "type": "festival",
+      "capacity": null,
+      "system_layout": {
+        "notes": "EDM festival deployment"
+      },
+      "outcomes": ["Festival circuit reputation building"],
+      "sources": ["https://www.svconline.com/the-wire/leading-edm-festival-loudspeaker-designer-hsd-sound-systems-upgrades-flagship-sherman-and-tomahawk-subwoofers-with-celestion-tsq-drivers"]
+    },
+    {
+      "case_id": "boss_wave_massive_hsd",
+      "venue": {"name": "Boss Wave Massive (HMAC)", "city": "Harrisburg", "country": "USA"},
+      "type": "festival",
+      "capacity": null,
+      "system_layout": {
+        "deployment_name": "The Dreadnought",
+        "partners": ["Tiaga Sound and Lighting", "SubCulture Music and Arts"],
+        "notes": "System tuned to HMAC main dance room dimensions"
+      },
+      "outcomes": ["AI-powered 3D audio and visual experience"],
+      "sources": ["https://hearditherefirst.blog/2022/09/15/boss-wave-massive/"]
+    },
+    {
+      "case_id": "elements_festival_hsd",
+      "venue": {"name": "Elements Music Festival", "city": "Various (East Coast)", "country": "USA"},
+      "type": "festival",
+      "capacity": null,
+      "system_layout": {},
+      "outcomes": ["East coast festival circuit"],
+      "sources": ["https://edmidentity.com/2024/05/02/lossless-denver-industry-spotlight/"]
+    }
+  ],
+  "r_and_d_relevance": {
+    "scores": {
+      "hf_clarity_transient": 5,
+      "directivity_control_imaging": 5,
+      "sub_weight_infrasonic": 7,
+      "psychoacoustic_potential": 5,
+      "small_room_viability": 2
+    },
+    "weights": {
+      "hf_clarity_transient": 0.23,
+      "directivity_control_imaging": 0.23,
+      "sub_weight_infrasonic": 0.23,
+      "psychoacoustic_potential": 0.20,
+      "small_room_viability": 0.11
+    },
+    "composite": 5.13,
+    "rationale": {
+      "hf_clarity_transient": "Standard compression driver HF; festival SPL optimization over fidelity; no advanced HF technology",
+      "directivity_control_imaging": "Modular waveguides (40/60/90 deg) but no advanced beam steering or point source coherence",
+      "sub_weight_infrasonic": "Sherman reaches 25Hz (-10dB) with 24in driver; horn-loaded efficiency; but 200kg weight",
+      "psychoacoustic_potential": "Bass culture focus; extreme LF output; but no documented psychoacoustic research",
+      "small_room_viability": "All products massive: Haymaker 70kg, Sherman 200kg; festival-scale only"
+    }
+  },
+  "sources": [
+    {"title": "Hennessey Sound Design Website", "url": "https://www.hennesseysounddesign.com/", "type": "manufacturer", "confidence": "high"},
+    {"title": "HSD Sound Systems Website", "url": "https://hsdsoundsystems.com/", "type": "manufacturer", "confidence": "high"},
+    {"title": "HSD Haymaker Product Page", "url": "https://hsdsoundsystems.com/the-haymaker/", "type": "datasheet", "confidence": "med"},
+    {"title": "HSD Sherman Product Page", "url": "https://hsdsoundsystems.com/sherman-2/", "type": "datasheet", "confidence": "med"},
+    {"title": "HSD Battlehawk Product Page", "url": "https://hsdsoundsystems.com/the-battlehawk/", "type": "datasheet", "confidence": "med"},
+    {"title": "SVC: Celestion TSQ Upgrade", "url": "https://www.svconline.com/the-wire/leading-edm-festival-loudspeaker-designer-hsd-sound-systems-upgrades-flagship-sherman-and-tomahawk-subwoofers-with-celestion-tsq-drivers", "type": "press", "confidence": "high"},
+    {"title": "FOH: Celestion TSQ Upgrade", "url": "https://fohonline.com/newsroom/news/hsd-sound-systems-upgrades-sherman-and-tomahawk-subwoofers-with-celestion-tsq-drivers/", "type": "press", "confidence": "high"},
+    {"title": "EDM Identity: Lossless Denver", "url": "https://edmidentity.com/2024/05/02/lossless-denver-industry-spotlight/", "type": "press", "confidence": "med"},
+    {"title": "Tiaga: Why HSD", "url": "https://tiagasoundandlighting.com/why-we-chose-hennessey-sound-design/", "type": "testimonial", "confidence": "med"}
+  ],
+  "audit_notes": "Source count: 9 (meets threshold). NO INDEPENDENT MEASUREMENTS found - all specs manufacturer claims. NO PATENTS identified. Limited technical documentation - many specs in images not text. EDM/bass culture niche focus. In-house amplifier production (KP/KD series) noted but not documented. Burning Man durability benchmark mentioned. Small-room viability very low due to product scale.",
+  "last_audited": "2025-02-05"
+}

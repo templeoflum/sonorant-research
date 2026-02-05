@@ -1,0 +1,9 @@
+company_id,name,founded_year,hq_country,ownership,philosophy_tags,drivers_in_house,amp_dsp_partners,standards_cert,last_audited
+danley_sound_labs,Danley Sound Labs,2005,USA,private,"point_source_coherent,multi_entry_horn,tapped_horn,constant_directivity,low_distortion,time_alignment",false,,,"2025-02-04"
+funktion_one,Funktion-One,1992,UK,private,"front_loaded_horn,constant_q_horn,point_source_coherent,low_distortion,acoustic_flat",true,,,"2025-02-04"
+void_acoustics,Void Acoustics,2002,UK,private,"fiberglass_composite,horn_loaded,aesthetic_design,htt_thermal",false,,"IP-55","2025-02-04"
+kv2_audio,KV2 Audio,2002,Czech Republic,private,"point_source_coherent,low_distortion,transient_response,trans_coil,time_alignment",false,Eighteen Sound,,"2025-02-05"
+fulcrum_acoustic,Fulcrum Acoustic,2008,USA,private,"coaxial,passive_cardioid,temporal_equalization,dsp_integrated,pattern_control",false,Ashly,,"2025-02-05"
+pk_sound,PK Sound,2009,Canada,private,"robotic_steering,variable_directivity,line_source,mechanical_optimization,dsp_integrated",false,,"IP69K,IP66","2025-02-05"
+holoplot,HOLOPLOT,2011,Germany,"subsidiary (Sphere Entertainment)","wave_field_synthesis,3d_beamforming,matrix_array,dsp_centric,immersive_audio",false,FPGA (in-house),,"2025-02-05"
+hennessey_sound_design,Hennessey Sound Design,2014,USA,private,"bass_culture,horn_loaded,festival_optimized,diy_ethos,custom_builds",false,"Celestion,B&C,faitalPRO,BMS,18sound",,"2025-02-05"

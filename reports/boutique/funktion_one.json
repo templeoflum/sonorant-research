@@ -1,0 +1,366 @@
+{
+  "company_id": "funktion_one",
+  "name": "Funktion-One",
+  "aka": ["F1", "Funktion One", "F-One"],
+  "founded_year": 1992,
+  "hq_country": "UK",
+  "hq_city": "Dorking, Surrey",
+  "key_people": [
+    {"name": "Tony Andrews", "role": "Founder, R&D Director", "years": "1992-present"},
+    {"name": "John Newsham", "role": "Co-founder", "years": "1992-present"},
+    {"name": "Ann Andrews", "role": "Managing Director", "years": null},
+    {"name": "Andrew Low", "role": "Director of Business Development", "years": null}
+  ],
+  "ownership": "private",
+  "lineage": {
+    "predecessors": ["Turbosound (Tony Andrews & John Newsham founders)"],
+    "spin_offs": []
+  },
+  "philosophy": {
+    "tags": ["front_loaded_horn", "constant_q_horn", "point_source_coherent", "low_distortion", "acoustic_flat"],
+    "summary": "Funktion-One designs acoustically flat loudspeaker systems requiring only crossover filters, relative delays and gains rather than corrective EQ. This preserves headroom and system linearity. They maximize efficiency, design proprietary transducers, and employ unique waveguide and loading technology for minimum distortion and controlled directivity.",
+    "notable_quotes": [
+      {
+        "quote": "The audio moment – that point where you get really involved in the music and suddenly realize you've been somewhat transported to another place.",
+        "person": "Tony Andrews",
+        "year": null,
+        "source": "https://www.everfest.com/magazine/festival-all-star-tony-andrews-of-funktion-one"
+      },
+      {
+        "quote": "We designed a horn that didn't honk but had all this immediacy and efficiency... right off the bat 107dB at 1W/1m.",
+        "person": "Tony Andrews",
+        "year": null,
+        "source": "https://www.audiotechnology.com/regulars/last-word-tony-andrews-part-1"
+      }
+    ]
+  },
+  "supply_chain": {
+    "drivers_in_house": true,
+    "driver_vendors": null,
+    "amp_dsp_partners": null
+  },
+  "standards_cert": [],
+  "ip_patents": [
+    {
+      "id": "US6650760B1",
+      "year": 2003,
+      "title": "Loudspeaker",
+      "relevance": "Turbo mid-range loading - central member creates annular channels, 75-750Hz at 107dB/1W/1m",
+      "url": "https://patents.google.com/patent/US6650760B1/en"
+    }
+  ],
+  "products": {
+    "resolution_series": [
+      {
+        "model_id": "funktion_one_res2",
+        "name": "Res 2",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["compression_1in", "cone_8", "cone_15"],
+          "hf_loading": ["os_cd_horn"],
+          "mf_loading": ["mid_horn"],
+          "lf_alignment": ["front_loaded_horn"],
+          "directivity_methods": ["constant_q_horn", "point_source_coherent"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 15, "count": 1},
+          {"position": "MF", "size_in": 8, "count": 1},
+          {"position": "HF", "exit_mm": 25.4, "count": 1}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [60, 18000],
+          "sensitivity_db_2v83": 102,
+          "sensitivity_mf_hf_db_4v": 106,
+          "power_handling_w": {"lf_aes": 400, "mf_hf_aes": 250},
+          "impedance_ohm_lf": 8,
+          "impedance_ohm_mf_hf": 12,
+          "directivity_nominal": "50x25",
+          "weight_kg": 48
+        }
+      }
+    ],
+    "evolution_series": [
+      {
+        "model_id": "funktion_one_evo6e",
+        "name": "Evo 6E",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["compression_1_4in", "cone_10", "cone_15"],
+          "hf_loading": ["os_cd_horn"],
+          "mf_loading": ["mid_horn"],
+          "lf_alignment": ["front_loaded_horn"],
+          "directivity_methods": ["constant_q_horn", "point_source_coherent"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 15, "count": 1},
+          {"position": "MF", "size_in": 10, "count": 1},
+          {"position": "HF", "exit_mm": 35.6, "count": 1}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [70, 18000],
+          "sensitivity_lf_db_2v83": 103,
+          "sensitivity_mf_db_4v9": 112,
+          "sensitivity_hf_db_5v6": 114,
+          "power_handling_w": {"lf_aes": 400, "mf_aes": 250, "hf_aes": 75},
+          "impedance_ohm_lf": 8,
+          "impedance_ohm_mf": 24,
+          "impedance_ohm_hf": 32,
+          "directivity_nominal": "50x25",
+          "weight_kg": 57
+        }
+      },
+      {
+        "model_id": "funktion_one_evolution_x",
+        "name": "Evolution X",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["compression_1in", "cone_8", "cone_15"],
+          "hf_loading": ["os_cd_horn"],
+          "mf_loading": ["mid_horn"],
+          "lf_alignment": ["front_loaded_horn"],
+          "directivity_methods": ["constant_q_horn"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 15, "count": 1},
+          {"position": "MF", "size_in": 8, "count": 1},
+          {"position": "HF", "exit_mm": 25.4, "count": 1}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [60, 18000],
+          "sensitivity_lf_db_2v83": 102,
+          "sensitivity_mf_db_4v": 107,
+          "sensitivity_hf_db_4v": 109,
+          "power_handling_w": {"lf_aes": 400, "mf_aes": 200, "hf_aes": 100},
+          "impedance_ohm_lf": 8,
+          "impedance_ohm_mf_hf": 16,
+          "directivity_nominal": "90x13",
+          "weight_kg": 47
+        }
+      }
+    ],
+    "vero_series": [
+      {
+        "model_id": "funktion_one_vx90",
+        "name": "VX90",
+        "status": "current",
+        "form_factor": "line_array",
+        "topology": {
+          "radiators": ["compression_1in", "cone_8", "cone_12"],
+          "hf_loading": ["waveguide_large"],
+          "mf_loading": ["mid_horn"],
+          "lf_alignment": ["reflex"],
+          "directivity_methods": ["steerable_dsp"]
+        },
+        "drivers": [
+          {"position": "MB", "size_in": 12, "count": 2},
+          {"position": "MF", "size_in": 8, "count": 1},
+          {"position": "HF", "exit_mm": 25.4, "count": 1}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [60, 18000],
+          "sensitivity_mb_db_4v": 100,
+          "sensitivity_mf_db_4v": 107,
+          "sensitivity_hf_db_4v": 109,
+          "power_handling_w": {"mb_aes": 800, "mf_aes": 200, "hf_aes": 100},
+          "impedance_ohm_mb": 16,
+          "impedance_ohm_mf_hf": 16,
+          "directivity_nominal": "90x13",
+          "weight_kg": 70
+        }
+      }
+    ],
+    "bass_enclosures": [
+      {
+        "model_id": "funktion_one_f218mk2",
+        "name": "F218 MkII",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_18"],
+          "lf_alignment": ["front_loaded_horn"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 18, "count": 2}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [50, 200],
+          "bandwidth_operating_hz": [25, 200],
+          "sensitivity_db_2v": 102,
+          "power_handling_w": {"aes_per_driver": 450},
+          "impedance_ohm_nom": "2x8",
+          "weight_kg": 93
+        }
+      },
+      {
+        "model_id": "funktion_one_f121",
+        "name": "F121",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_21"],
+          "lf_alignment": ["front_loaded_horn"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 21, "count": 1, "voicecoil_in": 6, "magnet": "neodymium"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [40, 250],
+          "bandwidth_operating_hz": [20, 200],
+          "sensitivity_db_2v83": 101,
+          "power_handling_w": {"aes": 750},
+          "impedance_ohm_nom": 8,
+          "weight_kg": 72
+        }
+      },
+      {
+        "model_id": "funktion_one_f221",
+        "name": "F221",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_21"],
+          "lf_alignment": ["front_loaded_horn"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 21, "count": 2, "voicecoil_in": 6, "magnet": "neodymium"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [40, 250],
+          "bandwidth_operating_hz": [20, 85],
+          "sensitivity_db_2v": 104,
+          "power_handling_w": {"aes_per_driver": 750},
+          "impedance_ohm_nom": "2x8",
+          "weight_kg": 130
+        }
+      },
+      {
+        "model_id": "funktion_one_f132",
+        "name": "F132",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_32"],
+          "lf_alignment": ["front_loaded_horn"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 32, "count": 1}
+        ],
+        "key_specs": {
+          "bandwidth_operating_hz": [20, 50],
+          "notes": "Infrasonic specialist"
+        }
+      }
+    ]
+  },
+  "case_studies": [
+    {
+      "case_id": "archives_london_2024_funktion_one",
+      "venue": {"name": "Archives London", "city": "London", "country": "UK"},
+      "type": "club",
+      "capacity": 1600,
+      "system_layout": {
+        "mains": "3x Evo 7T + 2x Evo 6E per side",
+        "subs": "6x F121 mono array",
+        "fills": "F101.2 pillar system"
+      },
+      "outcomes": [
+        "Clarity in highs and mids, deep and even bass response",
+        "Premier clubbing destination status"
+      ],
+      "sources": ["https://funktion-one.com/news/archives-london-injects-new-life-into-citys-clubbing-landscape-funktion-one-system-installed-by-sound-services-ltd/"]
+    },
+    {
+      "case_id": "open_ground_wuppertal_funktion_one",
+      "venue": {"name": "Open Ground", "city": "Wuppertal", "country": "Germany"},
+      "type": "club",
+      "capacity": null,
+      "system_layout": {
+        "mains": "4x Evo 6E + Evo 6EL",
+        "subs": "2x F221 + 2x F132 infrasonic"
+      },
+      "outcomes": [
+        "Put venue on the map in small city",
+        "Highest quality sound prioritized"
+      ],
+      "sources": ["https://funktion-one.com/news/open-ground-puts-wuppertal-on-the-map-with-incredible-club-experience/"]
+    },
+    {
+      "case_id": "lucky_club_camden_funktion_one",
+      "venue": {"name": "The Lucky Club", "city": "Camden, London", "country": "UK"},
+      "type": "club",
+      "capacity": null,
+      "system_layout": {
+        "mains": "Funktion-One (unspecified)",
+        "processing": "Dateq SPL6 limiting system"
+      },
+      "outcomes": [
+        "No noise complaints after nearly a year",
+        "Operated under strict licence conditions"
+      ],
+      "lessons": [
+        "Pattern control critical for noise-sensitive locations",
+        "Limiting system integration for compliance"
+      ],
+      "sources": ["https://neuron-av.co.uk/projects/the-lucky-club-funktion-one-installation/"]
+    }
+  ],
+  "criticisms": [
+    {
+      "source": "Jumble Blue Technical Analysis",
+      "url": "https://www.jumble.blue/en/what-nobody-tells-you-and-admits-about-funktion-one/",
+      "issues": [
+        "Single 10\" driver across 250-4000Hz may exhibit masking with complex material",
+        "Doppler distortion from single cone handling wide bandwidth",
+        "Point-source creates uneven SPL front-to-rear vs line arrays",
+        "Lacks integrated prediction software"
+      ]
+    }
+  ],
+  "r_and_d_relevance": {
+    "scores": {
+      "hf_clarity_transient": 8,
+      "directivity_control_imaging": 7,
+      "sub_weight_infrasonic": 9,
+      "psychoacoustic_potential": 8,
+      "small_room_viability": 6
+    },
+    "weights": {
+      "hf_clarity_transient": 0.23,
+      "directivity_control_imaging": 0.23,
+      "sub_weight_infrasonic": 0.23,
+      "psychoacoustic_potential": 0.20,
+      "small_room_viability": 0.11
+    },
+    "composite": 7.78,
+    "rationale": {
+      "hf_clarity_transient": "Excellent transient response; paper cones for organic character; some concerns about complex material",
+      "directivity_control_imaging": "Point source coherent but coverage uniformity challenged in larger spaces",
+      "sub_weight_infrasonic": "F132 reaches 20Hz; F221 reference-class 21\" horn-loaded; F121 40Hz-250Hz single 21\"",
+      "psychoacoustic_potential": "Audio moment philosophy; visceral, involving sound; highly regarded in club community",
+      "small_room_viability": "Point source intensity can be challenging; careful deployment required"
+    }
+  },
+  "sources": [
+    {"title": "Funktion-One About Page", "url": "https://funktion-one.com/about/", "type": "manufacturer", "confidence": "high"},
+    {"title": "US6650760B1 Patent", "url": "https://patents.google.com/patent/US6650760B1/en", "type": "patent", "confidence": "high"},
+    {"title": "Everfest: Tony Andrews Interview", "url": "https://www.everfest.com/magazine/festival-all-star-tony-andrews-of-funktion-one", "type": "press", "confidence": "high"},
+    {"title": "AudioTechnology: Tony Andrews Part 1", "url": "https://www.audiotechnology.com/regulars/last-word-tony-andrews-part-1", "type": "press", "confidence": "high"},
+    {"title": "Red Bull Music Academy: Tony Andrews Lecture", "url": "https://www.redbullmusicacademy.com/lectures/tony-andrews-keep-the-signal-chain/", "type": "press", "confidence": "high"},
+    {"title": "Archives London Installation", "url": "https://funktion-one.com/news/archives-london-injects-new-life-into-citys-clubbing-landscape-funktion-one-system-installed-by-sound-services-ltd/", "type": "case_study", "confidence": "high"},
+    {"title": "Open Ground Wuppertal Installation", "url": "https://funktion-one.com/news/open-ground-puts-wuppertal-on-the-map-with-incredible-club-experience/", "type": "case_study", "confidence": "high"},
+    {"title": "Lucky Club Camden Installation", "url": "https://neuron-av.co.uk/projects/the-lucky-club-funktion-one-installation/", "type": "case_study", "confidence": "high"},
+    {"title": "E1 London Installation", "url": "https://audiomediainternational.com/funktion-one-evo-system-from-sound-services-installed-in-london-club-e1/", "type": "case_study", "confidence": "high"},
+    {"title": "Jumble Blue Technical Analysis", "url": "https://www.jumble.blue/en/what-nobody-tells-you-and-admits-about-funktion-one/", "type": "review", "confidence": "med"},
+    {"title": "Funktion-One Res 2 Product Page", "url": "https://funktion-one.com/product/res-2/", "type": "datasheet", "confidence": "high"},
+    {"title": "Funktion-One Evo 6E Product Page", "url": "https://funktion-one.com/product/evo-6e/", "type": "datasheet", "confidence": "high"},
+    {"title": "Funktion-One VX90 Product Page", "url": "https://funktion-one.com/product/vx90/", "type": "datasheet", "confidence": "high"},
+    {"title": "Funktion-One F218 MkII Product Page", "url": "https://funktion-one.com/product/f218-mk2/", "type": "datasheet", "confidence": "high"},
+    {"title": "Funktion-One F221 Product Page", "url": "https://funktion-one.com/product/f221/", "type": "datasheet", "confidence": "high"}
+  ],
+  "spec_provenance_note": "All specifications from manufacturer product pages. No independent third-party measurements identified. Manufacturer claims 8+ patents; only 1 confirmed (US6650760B1). Justia patent search returned 403 error.",
+  "audit_notes": "Source count: 15 (exceeds threshold). Independent Measurements: NONE found — Funktion-One does not have third-party measurement documentation. Patents Verified: 1 confirmed (US6650760B1); manufacturer claims 8+ but others not located. Gaps: Full patent list not accessible (Justia 403); Resolution series specs incomplete; THD measurements not found. Provenance: All specs from manufacturer datasheets only.",
+  "last_audited": "2025-02-05"
+}

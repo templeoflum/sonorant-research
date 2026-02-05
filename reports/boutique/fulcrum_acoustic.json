@@ -1,0 +1,231 @@
+{
+  "company_id": "fulcrum_acoustic",
+  "name": "Fulcrum Acoustic",
+  "aka": ["Fulcrum"],
+  "founded_year": 2008,
+  "hq_country": "USA",
+  "hq_city": "Whitinsville, Massachusetts",
+  "key_people": [
+    {"name": "Stephen Siegel", "role": "President", "years": "2008-present"},
+    {"name": "David Gunness", "role": "VP of R&D, Chief Designer", "years": "2008-present"},
+    {"name": "Chris Alfiero", "role": "Co-founder", "years": "2008-present"}
+  ],
+  "ownership": "private (LLC)",
+  "lineage": {
+    "predecessors": ["EAW (Siegel, Gunness employment)", "Electro-Voice (Gunness, Alfiero employment)", "Acentech (Siegel)"],
+    "spin_offs": ["Fulcrum Immersive (acquired Venueflex)"]
+  },
+  "philosophy": {
+    "tags": ["coaxial", "passive_cardioid", "temporal_equalization", "dsp_integrated", "pattern_control"],
+    "summary": "Fulcrum treats loudspeakers and DSP as a unified system. TQ processing eliminates temporal distortion using FIR filters. Passive Cardioid Technology achieves directional LF control mechanically without active arrays. Comprehensive coaxial product range unique in industry. Installation-focused with architectural compatibility emphasis.",
+    "notable_quotes": [
+      {
+        "quote": "We treat both loudspeakers and DSP as one system.",
+        "person": "Fulcrum Acoustic",
+        "year": null,
+        "source": "https://www.fulcrum-acoustic.com/"
+      },
+      {
+        "quote": "Loudspeakers tuned with TQ provide a crisper stereo image, greater soundstage depth, more separation between the elements of a complex mix.",
+        "person": "Fulcrum Acoustic",
+        "year": null,
+        "source": "https://fulcrum-acoustic.com/wp-content/uploads/2019/10/implement-tq-processing.pdf"
+      }
+    ]
+  },
+  "supply_chain": {
+    "drivers_in_house": false,
+    "driver_vendors": null,
+    "amp_dsp_partners": ["Ashly (TQ licensing)"]
+  },
+  "standards_cert": [],
+  "ip_patents": [
+    {
+      "id": "US10,123,111 B2",
+      "year": 2018,
+      "title": "Passive Cardioid Speaker",
+      "relevance": "Acoustic circuit for directional LF control without active arrays",
+      "url": "https://patents.google.com/patent/US10123111B2/en",
+      "inventor": "David W. Gunness"
+    }
+  ],
+  "spec_provenance_note": "All specifications from manufacturer product pages or authorized distributors (Parsons Audio). No independent third-party measurements identified. Passive cardioid performance validated via audioXpress patent review.",
+  "products": {
+    "fh_series": [
+      {
+        "model_id": "fulcrum_fh1566",
+        "name": "FH1566",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["compression_4in", "cone_15"],
+          "hf_loading": ["coaxial_horn"],
+          "lf_alignment": ["horn_loaded"],
+          "directivity_methods": ["coaxial_point_source", "constant_q_horn"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 15, "count": 1, "voicecoil_in": 3.5, "magnet": "neodymium"},
+          {"position": "HF", "diaphragm_in": 4, "count": 1, "material": "titanium", "magnet": "neodymium"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [54, 20000],
+          "max_spl_db_peak": 138,
+          "max_spl_db_cont": 132,
+          "power_handling_w": {"nominal": 800},
+          "impedance_ohm_nom": 8,
+          "directivity_nominal": "60x60",
+          "pattern_control_to_hz": 400,
+          "notes": "35deg trapezoidal, arrayable, single-amp with DSP"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ],
+    "cs_series": [
+      {
+        "model_id": "fulcrum_cs118",
+        "name": "CS118",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_18"],
+          "lf_alignment": ["passive_cardioid"],
+          "directivity_methods": ["passive_cardioid"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 18, "count": 1, "voicecoil_in": 4, "magnet": "ceramic"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [29, 137],
+          "sensitivity_db_2v83_half_space": 103,
+          "max_spl_db_peak_half_space": 136,
+          "max_spl_db_cont_half_space": 130,
+          "power_handling_w": {"nominal": 1200},
+          "impedance_ohm_nom": 8,
+          "rear_rejection_db": 10,
+          "directivity_nominal": "subcardioid"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      },
+      {
+        "model_id": "fulcrum_cs121",
+        "name": "CS121",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_21"],
+          "lf_alignment": ["passive_cardioid"],
+          "directivity_methods": ["passive_cardioid"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 21, "count": 1}
+        ],
+        "key_specs": {
+          "rear_rejection_db": 10,
+          "directivity_nominal": "subcardioid",
+          "notes": "Patented passive cardioid technology"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "low"
+      }
+    ],
+    "fl_series": [
+      {
+        "model_id": "fulcrum_fl283",
+        "name": "FL283",
+        "status": "current",
+        "form_factor": "line_array",
+        "topology": {
+          "radiators": ["compression_1_4in", "cone_8"],
+          "hf_loading": ["waveguide_large"],
+          "lf_alignment": ["horn_loaded"],
+          "directivity_methods": ["passive_cardioid", "line_source"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 8, "count": 2, "voicecoil_in": 2, "magnet": "ceramic"},
+          {"position": "HF", "diaphragm_in": 1.4, "count": 3, "material": "titanium", "magnet": "neodymium"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [54, 18600],
+          "impedance_ohm_nom": 16,
+          "directivity_nominal": "90xarray",
+          "max_splay_deg": 20,
+          "notes": "First product with Passive Cardioid Tech; up to 8 per amp channel"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ]
+  },
+  "case_studies": [
+    {
+      "case_id": "avalon_pangaea_singapore_fulcrum",
+      "venue": {"name": "Avalon and Pangaea", "city": "Singapore", "country": "Singapore"},
+      "type": "club",
+      "capacity": null,
+      "system_layout": {
+        "mains": "Prophile XL, L, M coaxials",
+        "subs": "FA Portable"
+      },
+      "outcomes": [
+        "Elevated SPL with visceral LF punch for massive dance floor",
+        "Clarity and precise directional control from compact enclosures"
+      ],
+      "sources": ["https://www.fulcrum-acoustic.com/case-studies/avalon-and-pangaea/"]
+    },
+    {
+      "case_id": "anthology_rochester_fulcrum",
+      "venue": {"name": "Anthology", "city": "Rochester", "country": "USA"},
+      "type": "performing_arts_club",
+      "capacity": null,
+      "system_layout": {
+        "mains": "2x CX1295 12in coaxial",
+        "fills": "dual 8in coaxial delays",
+        "monitors": "FW15 cardioid stage monitor"
+      },
+      "outcomes": ["Enhanced artist monitoring", "Sophisticated shows"],
+      "sources": ["https://www.fulcrum-acoustic.com/case-studies/anthology/"]
+    }
+  ],
+  "r_and_d_relevance": {
+    "scores": {
+      "hf_clarity_transient": 8,
+      "directivity_control_imaging": 9,
+      "sub_weight_infrasonic": 7,
+      "psychoacoustic_potential": 8,
+      "small_room_viability": 8
+    },
+    "weights": {
+      "hf_clarity_transient": 0.23,
+      "directivity_control_imaging": 0.23,
+      "sub_weight_infrasonic": 0.23,
+      "psychoacoustic_potential": 0.20,
+      "small_room_viability": 0.11
+    },
+    "composite": 8.00,
+    "rationale": {
+      "hf_clarity_transient": "TQ processing targets temporal distortion; coaxial point-source coherence",
+      "directivity_control_imaging": "Pattern control to 400Hz with coaxials; passive cardioid for LF; TQ imaging benefits",
+      "sub_weight_infrasonic": "CS118 reaches 29Hz; passive cardioid in compact single-box design",
+      "psychoacoustic_potential": "TQ claims crisper stereo image, soundstage depth, separation between elements",
+      "small_room_viability": "Installation-focused; TQ Install series; FW15 cardioid monitor for stage"
+    }
+  },
+  "sources": [
+    {"title": "Fulcrum Acoustic Company", "url": "https://www.fulcrum-acoustic.com/professional-loudspeaker-manufacturer/", "type": "manufacturer", "confidence": "high"},
+    {"title": "TQ Implementation Guide", "url": "https://fulcrum-acoustic.com/wp-content/uploads/2019/10/implement-tq-processing.pdf", "type": "manufacturer", "confidence": "high"},
+    {"title": "Avalon Pangaea Case Study", "url": "https://www.fulcrum-acoustic.com/case-studies/avalon-and-pangaea/", "type": "case_study", "confidence": "high"},
+    {"title": "Anthology Case Study", "url": "https://www.fulcrum-acoustic.com/case-studies/anthology/", "type": "case_study", "confidence": "high"},
+    {"title": "Jersey Shore Wedding Venues", "url": "https://www.installation-international.com/case-studies/fulcrum-acoustic-brings-night-club-quality-to-sound-to-jersey-shore-wedding-venue", "type": "case_study", "confidence": "high"},
+    {"title": "audioXpress Patent Review", "url": "https://audioxpress.com/article/patent-review-passive-cardioid-speaker", "type": "review", "confidence": "high"},
+    {"title": "ProSoundWeb Patent Announcement", "url": "https://www.prosoundweb.com/fulcrum-acoustic-awarded-patent-for-passive-cardioid-loudspeaker/", "type": "press", "confidence": "high"},
+    {"title": "Parsons Audio FH15", "url": "https://paudio.com/product/fulcrum-acoustic-fh15-full-range-coaxial-horn/", "type": "datasheet", "confidence": "high"},
+    {"title": "Parsons Audio CS118", "url": "https://paudio.com/product/fulcrum-acoustic-cs118-18%E2%80%B3-subcardioid-subwoofer/", "type": "datasheet", "confidence": "high"},
+    {"title": "MONDO-DR Profile", "url": "https://www.mondodr.com/in-profile-fulcrum-acoustic/", "type": "press", "confidence": "high"},
+    {"title": "Fast and Wide CS118/CS121", "url": "https://www.fast-and-wide.com/equipment-releases/loudspeakers-sound-reinforcement/8756-fulcrum-acoustic-cs118-cs121-cardioid-subwoofers", "type": "press", "confidence": "high"},
+    {"title": "Justia David Gunness Patents", "url": "https://patents.justia.com/inventor/david-w-gunness", "type": "patent", "confidence": "high"}
+  ],
+  "audit_notes": "Source count: 12 (meets threshold). NO INDEPENDENT MEASUREMENTS found - specs from manufacturer/distributors only. Patent US10,123,111 B2 verified via audioXpress review. Many Fulcrum website pages returned 404 errors; specs gathered from distributor sites. Weight/dimensions incomplete. Limited club/EDM case studies - primarily sports/performing arts.",
+  "last_audited": "2025-02-05"
+}

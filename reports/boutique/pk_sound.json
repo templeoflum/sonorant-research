@@ -1,0 +1,183 @@
+{
+  "company_id": "pk_sound",
+  "name": "PK Sound",
+  "aka": ["Polar Kinetic", "PK"],
+  "founded_year": 2009,
+  "hq_country": "Canada",
+  "hq_city": "Rocky View County (Calgary), Alberta",
+  "key_people": [
+    {"name": "Jeremy Bridge", "role": "CEO, Founder", "years": "2009-present"}
+  ],
+  "ownership": "private",
+  "lineage": {
+    "predecessors": [],
+    "spin_offs": []
+  },
+  "philosophy": {
+    "tags": ["robotic_steering", "variable_directivity", "line_source", "mechanical_optimization", "dsp_integrated"],
+    "summary": "PK Sound's Polar Kinetic approach centers on mechanical optimization over DSP-based beam steering. Soundfield shape determined by physical motion via robotic actuators, not digital processing. Real-time coverage adjustment after fly. 0.1deg vertical precision.",
+    "notable_quotes": [
+      {
+        "quote": "In 2015, PK Sound patented the world's first robotic line-source system — robotics within the loudspeakers control both vertical and horizontal directivity.",
+        "person": "Avenue Calgary",
+        "year": 2015,
+        "source": "https://www.avenuecalgary.com/city-life/innovation/pk-sound-calgary-audio-technology-company/"
+      }
+    ]
+  },
+  "supply_chain": {
+    "drivers_in_house": false,
+    "driver_vendors": null,
+    "amp_dsp_partners": null
+  },
+  "standards_cert": ["IP69K (static)", "IP66 (dynamic)"],
+  "ip_patents": [
+    {
+      "id": "US20140353074A1",
+      "year": null,
+      "title": "Robotic mounting & adjustment for line array",
+      "relevance": "Vertical angle adjustment via integrated robotic linear actuators",
+      "url": "https://patents.google.com/patent/US20140353074A1"
+    },
+    {
+      "id": "US9894433B2",
+      "year": null,
+      "title": "CMI Waveguide",
+      "relevance": "Variable horizontal directivity 60-120deg via robotic actuators",
+      "url": "https://patents.google.com/patent/US9894433B2"
+    }
+  ],
+  "spec_provenance_note": "All specifications from manufacturer product pages. No independent third-party measurements identified. Patents verified via Google Patents.",
+  "products": {
+    "trinity_series": [
+      {
+        "model_id": "pk_t10",
+        "name": "T10",
+        "status": "current",
+        "form_factor": "line_array",
+        "topology": {
+          "radiators": ["planar_4in", "cone_6_5", "cone_10"],
+          "hf_loading": ["planar_wave"],
+          "mf_loading": ["cmi_waveguide"],
+          "lf_alignment": ["bandpass"],
+          "directivity_methods": ["robotic_steering", "cmi_waveguide"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 10, "count": 2, "magnet": "neodymium", "loading": "bandpass"},
+          {"position": "MF", "size_in": 6.5, "count": 2, "loading": "cmi_waveguide"},
+          {"position": "HF", "size_in": 4, "count": 1, "type": "dual_diaphragm_planar"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [40, 20000],
+          "max_spl_db_peak": 146,
+          "power_handling_w": {"total": 3000, "channels": 4, "type": "class_d"},
+          "h_coverage_deg": [60, 120],
+          "h_resolution_deg": 5,
+          "v_coverage_deg": [0, 12],
+          "v_resolution_deg": 0.1,
+          "dimensions_mm": {"w": 980, "h": 250, "d": 561},
+          "weight_kg": 47.6,
+          "max_array_modules": 24,
+          "actuator_lifecycle": 80000,
+          "ip_rating": "IP69K/IP66"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ],
+    "gravity_series": [
+      {
+        "model_id": "pk_g218",
+        "name": "G218",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_18"],
+          "lf_alignment": ["reflex"],
+          "directivity_methods": ["cardioid_arrayable"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 18, "count": 2, "type": "high_excursion"}
+        ],
+        "key_specs": {
+          "power_handling_w": {"amplifier": 8500, "type": "class_d_ipalmod"},
+          "cardioid_capable": true,
+          "notes": "Unrestricted vent design; touring and install versions"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "low"
+      }
+    ]
+  },
+  "case_studies": [
+    {
+      "case_id": "shambhala_village_2022_pk",
+      "venue": {"name": "Shambhala Music Festival - Village Stage", "city": "Salmo", "country": "Canada"},
+      "type": "festival",
+      "capacity": null,
+      "system_layout": {
+        "mains": "Trinity Black",
+        "subs": "T218"
+      },
+      "outcomes": [
+        "Permanent rigging points enable testing of new technology",
+        "Precise soundfield tailoring via .dynamics software",
+        "Noise bleed minimization"
+      ],
+      "sources": ["https://pksound.live/application/touring-and-festivals/80-reimagined-village"]
+    },
+    {
+      "case_id": "edc_basspod_2015_pk",
+      "venue": {"name": "EDC Las Vegas - BassPOD", "city": "Las Vegas", "country": "USA"},
+      "type": "festival",
+      "capacity": null,
+      "system_layout": {
+        "mains": "16x Trinity per side",
+        "subs": "69x CX800 dual 18"
+      },
+      "outcomes": [
+        "LA Weekly named BassPOD top pick of festival",
+        "Debut success for Trinity system"
+      ],
+      "sources": ["https://www.vice.com/en/article/from-shambhala-to-edc-pk-sound-is-on-a-never-ending-festival-circuit/"]
+    }
+  ],
+  "r_and_d_relevance": {
+    "scores": {
+      "hf_clarity_transient": 7,
+      "directivity_control_imaging": 9,
+      "sub_weight_infrasonic": 6,
+      "psychoacoustic_potential": 7,
+      "small_room_viability": 3
+    },
+    "weights": {
+      "hf_clarity_transient": 0.23,
+      "directivity_control_imaging": 0.23,
+      "sub_weight_infrasonic": 0.23,
+      "psychoacoustic_potential": 0.20,
+      "small_room_viability": 0.11
+    },
+    "composite": 6.79,
+    "rationale": {
+      "hf_clarity_transient": "4in planar wave HF driver; festival-scale optimization",
+      "directivity_control_imaging": "Patented robotic 3D beam steering; 0.1deg precision; mechanical > DSP",
+      "sub_weight_infrasonic": "G218 cardioid-capable but no extension specs; festival-scale subs",
+      "psychoacoustic_potential": "Real-time coverage adjustment; reduced reflections; EDM validation",
+      "small_room_viability": "Large-format touring/festival focus; T10 at 47.6kg is substantial"
+    }
+  },
+  "sources": [
+    {"title": "Avenue Calgary Company Profile", "url": "https://www.avenuecalgary.com/city-life/innovation/pk-sound-calgary-audio-technology-company/", "type": "press", "confidence": "high"},
+    {"title": "Village Stage Case Study", "url": "https://pksound.live/application/touring-and-festivals/80-reimagined-village", "type": "case_study", "confidence": "high"},
+    {"title": "Vice Festival Circuit", "url": "https://www.vice.com/en/article/from-shambhala-to-edc-pk-sound-is-on-a-never-ending-festival-circuit/", "type": "press", "confidence": "high"},
+    {"title": "T10 Product Page", "url": "https://pksound.live/product/line-source/t10", "type": "datasheet", "confidence": "high"},
+    {"title": "ProSoundWeb Tech Focus", "url": "https://www.prosoundweb.com/tech-focus-pk-sound-robotic-line-array-technology/", "type": "press", "confidence": "high"},
+    {"title": "audioXpress Trinity Black", "url": "https://audioxpress.com/news/pk-sound-launches-trinity-black-robotic-line-source-element", "type": "press", "confidence": "high"},
+    {"title": "ProSoundWeb G218", "url": "https://www.prosoundweb.com/pk-sound-launches-gravity-218-subwoofer/", "type": "press", "confidence": "high"},
+    {"title": "FOH Magazine Trinity", "url": "https://fohonline.com/articles/product-focus/pk-sound-trinity/", "type": "press", "confidence": "high"},
+    {"title": "TPi Shambhala 2022", "url": "https://www.tpimagazine.com/shambhala-music-festival-returns-with-pk-sound/", "type": "press", "confidence": "high"},
+    {"title": "ProSoundWeb Shambhala", "url": "https://www.prosoundweb.com/pk-sound-covers-british-columbias-shambhala-music-festival/", "type": "press", "confidence": "high"}
+  ],
+  "audit_notes": "Source count: 10 (meets threshold). NO INDEPENDENT MEASUREMENTS found. Two patents verified (US20140353074A1, US9894433B2). G218 subwoofer specs incomplete (no freq response/sensitivity). Trinity Black full specs not found. Limited small-venue applications - primarily festival/touring scale.",
+  "last_audited": "2025-02-05"
+}

@@ -1,0 +1,258 @@
+{
+  "company_id": "kv2_audio",
+  "name": "KV2 Audio",
+  "aka": ["KV2"],
+  "founded_year": 2002,
+  "hq_country": "Czech Republic",
+  "hq_city": "Milevsko",
+  "key_people": [
+    {"name": "George Krampera", "role": "Founder, Chief Engineer", "years": "2002-present"},
+    {"name": "George Krampera Jr.", "role": "CEO", "years": "2005-present"},
+    {"name": "Andrea Manzini", "role": "Transducer Partner (Eighteen Sound)", "years": null}
+  ],
+  "ownership": "private (family-owned)",
+  "lineage": {
+    "predecessors": ["RCF (George Krampera as chief engineer 1991)"],
+    "spin_offs": []
+  },
+  "philosophy": {
+    "tags": ["point_source_coherent", "low_distortion", "transient_response", "trans_coil", "time_alignment"],
+    "summary": "KV2 emphasizes three critical elements: frequency, level, and TIME. Point source design delivers minimal destructive interference, accurate impulse response, and superior sound. Focus on distortion elimination through transducer mechanical design and purpose-built amplification.",
+    "notable_quotes": [
+      {
+        "quote": "The true reproduction of the original sound and its dynamics are the key elements in the development of our products.",
+        "person": "KV2 Audio",
+        "year": null,
+        "source": "https://www.kv2audio.com/about-us.html"
+      },
+      {
+        "quote": "The challenge for KV2 in building a large point source system for audiences of 50,000 people plus, was to reproduce the low mid energy that certain line arrays provide whilst maintaining the key benefits of point source technology.",
+        "person": "George Krampera",
+        "year": null,
+        "source": "https://www.kv2audio.com/technical-talks-with-george-krampera.html"
+      }
+    ]
+  },
+  "supply_chain": {
+    "drivers_in_house": false,
+    "driver_vendors": ["Eighteen Sound (partnership)"],
+    "amp_dsp_partners": null
+  },
+  "standards_cert": [],
+  "ip_patents": [],
+  "spec_provenance_note": "All specifications sourced from manufacturer product pages and datasheets. No independent third-party measurements identified. Patent-pending claims exist but no granted patents confirmed via USPTO/Google Patents.",
+  "products": {
+    "esd_series": [
+      {
+        "model_id": "kv2_esd10",
+        "name": "ESD10",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["compression_1_75in", "cone_10"],
+          "hf_loading": ["os_cd_horn"],
+          "lf_alignment": ["sealed"],
+          "directivity_methods": ["constant_q_horn"],
+          "structure": ["birch"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 10, "count": 1, "voicecoil_in": 2.5, "type": "trans_coil", "magnet": "neodymium"},
+          {"position": "HF", "diaphragm_in": 1.75, "count": 1, "magnet": "neodymium"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [65, 20000],
+          "bandwidth_10db_hz": [56, 28000],
+          "sensitivity_db_1w": 96,
+          "max_spl_db_cont": 125,
+          "max_spl_db_peak": 131,
+          "power_handling_w": {"recommended": 500},
+          "impedance_ohm_nom": 4,
+          "directivity_nominal": "100x80",
+          "crossover_hz": 1800,
+          "dimensions_mm": {"h": 520, "w": 310, "d": 324},
+          "weight_kg": 16.5
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ],
+    "es_series": [
+      {
+        "model_id": "kv2_es25",
+        "name": "ES2.5",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_15"],
+          "lf_alignment": ["front_loaded_horn"],
+          "structure": ["birch"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 15, "count": 2, "voicecoil_in": 4, "diaphragm": "epoxy_cellulose", "magnet": "ferrite"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [38, 130],
+          "bandwidth_10db_hz": [34, 130],
+          "max_spl_db_cont": 134,
+          "max_spl_db_peak": 140,
+          "power_handling_w": {"from_epak": 1600},
+          "impedance_ohm_nom": 4,
+          "crossover_hz": [70, 130],
+          "dimensions_mm": {"h": 600, "w": 700, "d": 750},
+          "weight_kg": 74.7
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ],
+    "ex_series": [
+      {
+        "model_id": "kv2_ex12mkii",
+        "name": "EX1.2MkII",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_12"],
+          "lf_alignment": ["front_loaded_horn"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 12, "count": 1, "voicecoil_in": 3, "type": "inside_outside", "magnet": "neodymium"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [38, 120],
+          "bandwidth_10db_hz": [32, 120],
+          "max_spl_db_cont": 124,
+          "max_spl_db_peak": 130,
+          "power_handling_w": {"internal_amp": 500},
+          "crossover_hz": 120,
+          "dimensions_mm": {"h": 370, "w": 800, "d": 400},
+          "weight_kg": 32
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ],
+    "vhd5": [
+      {
+        "model_id": "kv2_vhd5000",
+        "name": "VHD5000",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["compression_3in", "cone_8", "cone_10"],
+          "hf_loading": ["os_cd_horn"],
+          "mf_loading": ["mid_horn"],
+          "lf_alignment": ["front_loaded_horn"],
+          "directivity_methods": ["point_source_coherent"]
+        },
+        "drivers": [
+          {"position": "LM", "size_in": 10, "count": 8, "arrangement": "front_loaded"},
+          {"position": "MF", "size_in": 8, "count": 6, "arrangement": "horn_loaded"},
+          {"position": "HF", "exit_mm": 76, "count": 3, "type": "NVPD_titanium"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [45, 20000],
+          "directivity_nominal": "80x30",
+          "power_handling_w": {"hf1": 300, "hf2": 600, "mf": 1500},
+          "notes": "Designed for 10m+ fly height, 50000+ audiences"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ]
+  },
+  "case_studies": [
+    {
+      "case_id": "egg_ldn_london_kv2",
+      "venue": {"name": "Egg LDN", "city": "London", "country": "UK"},
+      "type": "club",
+      "capacity": 1000,
+      "system_layout": {
+        "mains": "4x SL4.12 (110deg H)",
+        "subs": "4x VHD4.21 + 2x ES2.6",
+        "dj_monitor": "EX15 + ES1.8"
+      },
+      "outcomes": [
+        "Super low distortion levels",
+        "Power and transient response praised",
+        "DJ Tiga: One of the best I've ever heard"
+      ],
+      "sources": ["https://www.kv2audio.com/news/award-winning-egg-ldn-evolves-with-kv2.html"]
+    },
+    {
+      "case_id": "forever_wuhan_kv2",
+      "venue": {"name": "FOREVER Club", "city": "Wuhan", "country": "China"},
+      "type": "club",
+      "capacity": 2000,
+      "room_area_sqm": 5000,
+      "system_layout": {
+        "mains": "VHD5 system"
+      },
+      "outcomes": ["Largest nightclub project in China 2022"],
+      "sources": ["https://www.isp-audio.com/en/installation-case-studies/audio-fixed-installation/9013-forever-club-in-wuhan-sounds-amazing-with-kv2-audio"]
+    },
+    {
+      "case_id": "mantra_jakarta_kv2",
+      "venue": {"name": "Mantra Club", "city": "Jakarta", "country": "Indonesia"},
+      "type": "club",
+      "capacity": null,
+      "room_height_m": 11,
+      "system_layout": {
+        "mains": "VHD2.0, VHD1.0",
+        "subs": "VHD4.18"
+      },
+      "outcomes": ["Fewer cabinets than line array for same performance"],
+      "sources": ["https://www.installation-international.com/case-studies/kv2-delivers-high-octane-audio-for-mantra-club-indonesia"]
+    }
+  ],
+  "user_feedback": {
+    "positive": [
+      "Stacks up against major brand high-end boxes at 1/3 price",
+      "Above HK Actor, RCF ART, JBL SR, Nexo PS10 in definition"
+    ],
+    "negative": [
+      "Horn is a little lifted - typically roll back HF 1-2dB"
+    ],
+    "source": "https://gearspace.com/board/so-much-gear-so-little-time/580500-kv2-audio.html"
+  },
+  "r_and_d_relevance": {
+    "scores": {
+      "hf_clarity_transient": 9,
+      "directivity_control_imaging": 8,
+      "sub_weight_infrasonic": 6,
+      "psychoacoustic_potential": 8,
+      "small_room_viability": 8
+    },
+    "weights": {
+      "hf_clarity_transient": 0.23,
+      "directivity_control_imaging": 0.23,
+      "sub_weight_infrasonic": 0.23,
+      "psychoacoustic_potential": 0.20,
+      "small_room_viability": 0.11
+    },
+    "composite": 7.77,
+    "rationale": {
+      "hf_clarity_transient": "Trans-Coil tech targets transient response; NVPD titanium CDs; user reports confirm clarity",
+      "directivity_control_imaging": "Point source philosophy maintains coherent imaging; various patterns available",
+      "sub_weight_infrasonic": "ES2.5 reaches 34Hz (-10dB); less extension than Danley/Funktion-One",
+      "psychoacoustic_potential": "Time as third critical element; signal integrity focus",
+      "small_room_viability": "ESD series for install; ESD10 at 16.5kg suitable for intimate venues"
+    }
+  },
+  "sources": [
+    {"title": "KV2 Audio About Us", "url": "https://www.kv2audio.com/about-us.html", "type": "manufacturer", "confidence": "high"},
+    {"title": "Technical Talks with George Krampera", "url": "https://www.kv2audio.com/technical-talks-with-george-krampera.html", "type": "manufacturer", "confidence": "high"},
+    {"title": "Egg LDN Case Study", "url": "https://www.kv2audio.com/news/award-winning-egg-ldn-evolves-with-kv2.html", "type": "case_study", "confidence": "high"},
+    {"title": "FOREVER Club Wuhan", "url": "https://www.isp-audio.com/en/installation-case-studies/audio-fixed-installation/9013-forever-club-in-wuhan-sounds-amazing-with-kv2-audio", "type": "case_study", "confidence": "high"},
+    {"title": "Mantra Club Jakarta", "url": "https://www.installation-international.com/case-studies/kv2-delivers-high-octane-audio-for-mantra-club-indonesia", "type": "case_study", "confidence": "high"},
+    {"title": "ESD10 Product Page", "url": "https://www.kv2audio.com/products/esd-series/esd10.html", "type": "datasheet", "confidence": "high"},
+    {"title": "ES2.5 Product Page", "url": "https://www.kv2audio.com/products/es-serie/es25.html", "type": "datasheet", "confidence": "high"},
+    {"title": "EX1.2MkII Product Page", "url": "https://www.kv2audio.com/products/ex-series/ex12-1.html", "type": "datasheet", "confidence": "high"},
+    {"title": "VHD5000 Product Page", "url": "https://www.kv2audio.com/products/vhd5/vhd5000.html", "type": "datasheet", "confidence": "high"},
+    {"title": "Fast and Wide Focus", "url": "https://www.fast-and-wide.com/more/wideangle/13440-focus-kv2-audio", "type": "press", "confidence": "high"},
+    {"title": "FOH Magazine KV2", "url": "https://fohonline.com/articles/company-411/kv2-audio-the-evolution-continues-with-new-products-new-distribution-and-new-directions/", "type": "press", "confidence": "high"},
+    {"title": "Gearspace Discussion", "url": "https://gearspace.com/board/so-much-gear-so-little-time/580500-kv2-audio.html", "type": "forum", "confidence": "med"}
+  ],
+  "audit_notes": "Source count: 12 (meets threshold). NO INDEPENDENT MEASUREMENTS found - all specs are manufacturer claims. NO PATENTS confirmed - company claims patent-pending but none granted found via Google Patents/Justia. User feedback from Gearspace provides informal verification of quality claims. Many product specs incomplete.",
+  "last_audited": "2025-02-05"
+}

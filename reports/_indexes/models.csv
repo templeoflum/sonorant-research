@@ -1,0 +1,26 @@
+model_id,company_id,name,status,application,form_factor,radiators,hf_loading,lf_alignment,directivity_methods,bandwidth_low,bandwidth_high,f3,f10,sens_2v83,max_spl_peak,directivity_nominal,di_avg_500_10k,weight_kg,w_mm,h_mm,d_mm,last_audited
+danley_sh50,danley_sound_labs,SH50,current,touring,point_source,"compression_1in,cone_5,cone_12",multi_entry_horn,horn_loaded,"constant_q_horn,point_source_coherent",50,18000,,37,100,133,50x50,,64.4,711,711,648,2025-02-04
+danley_sh96,danley_sound_labs,SH96,current,touring,point_source,"compression_1_4in,cone_4,cone_15",multi_entry_horn,horn_loaded,"constant_q_horn,point_source_coherent",50,16000,,,101,139,90x60,,97.5,673,1143,635,2025-02-04
+danley_sm60f,danley_sound_labs,SM60F,current,touring,point_source,"coax_cd,cone_8",multi_entry_horn,horn_loaded,"constant_q_horn,point_source_coherent",66,24000,,52,99,131,60x60,,22.7,523,523,414,2025-02-04
+danley_th118,danley_sound_labs,TH118,current,touring,sub,cone_18,,tapped_horn,omni,40,250,,28,108,143,omni,,72.6,1016,572,724,2025-02-04
+danley_bc218,danley_sound_labs,BC218,current,touring,sub,cone_18,,front_loaded_horn,cardioid_capable,26,150,,22,110,148,cardioid_capable,,232,1524,1524,762,2025-02-04
+funktion_one_res2,funktion_one,Res 2,current,touring,point_source,"compression_1in,cone_8,cone_15",os_cd_horn,front_loaded_horn,"constant_q_horn,point_source_coherent",60,18000,,,102,,50x25,,48,,,,2025-02-04
+funktion_one_evo6e,funktion_one,Evo 6E,current,touring,point_source,"compression_1_4in,cone_10,cone_15",os_cd_horn,front_loaded_horn,"constant_q_horn,point_source_coherent",70,18000,,,103,,50x25,,57,,,,2025-02-04
+funktion_one_f121,funktion_one,F121,current,touring,sub,cone_21,,front_loaded_horn,,40,250,,20,101,,omni,,72,,,,2025-02-04
+funktion_one_f221,funktion_one,F221,current,touring,sub,cone_21,,front_loaded_horn,,40,250,,20,104,,omni,,130,,,,2025-02-04
+void_air_motion,void_acoustics,Air Motion,current,install,point_source,"compression_1_5in,cone_8,cone_12",os_cd_horn,front_loaded_horn,constant_q_horn,140,20000,,,106,138,60x50,,35.4,,,,2025-02-04
+void_incubus_sub,void_acoustics,Incubus Sub,current,touring,sub,cone_21,,bandpass_horn_hybrid,,29,95,,,105,148,omni,,214,,,,2025-02-04
+void_stasys_xv2,void_acoustics,Stasys XV2,current,touring,sub,cone_18,,front_loaded_horn,,30,180,,,104,144,omni,,130,,,,2025-02-04
+void_nexus_xl,void_acoustics,Nexus XL,current,touring,sub,cone_21,,reflex,,30,150,,,104,141,omni,,90,,,,2025-02-04
+kv2_esd10,kv2_audio,ESD10,current,install,point_source,"compression_1_75in,cone_10",os_cd_horn,sealed,constant_q_horn,65,20000,,56,96,131,100x80,,16.5,310,520,324,2025-02-05
+kv2_es25,kv2_audio,ES2.5,current,touring,sub,cone_15,,front_loaded_horn,,38,130,,34,,140,omni,,74.7,700,600,750,2025-02-05
+fulcrum_fh1566,fulcrum_acoustic,FH1566,current,install,point_source,"compression_4in,cone_15",coaxial_horn,horn_loaded,"coaxial_point_source,constant_q_horn",54,20000,,,,138,60x60,,,,,,2025-02-05
+fulcrum_cs118,fulcrum_acoustic,CS118,current,install,sub,cone_18,,passive_cardioid,passive_cardioid,29,137,,,103,136,subcardioid,,,,,,2025-02-05
+pk_t10,pk_sound,T10,current,touring,line_array,"planar_4in,cone_6_5,cone_10","planar_wave,cmi_waveguide",bandpass,"robotic_steering,cmi_waveguide",40,20000,,,,,60-120x0-12,,,47.6,980,250,561,2025-02-05
+pk_g218,pk_sound,G218,current,touring,sub,cone_18,,reflex,cardioid_arrayable,,,,,,,cardioid_capable,,,,,,2025-02-05
+holoplot_md96,holoplot,X1 MD96,current,install,matrix_array,"cone_5in,silk_dome_1_3in",direct_radiating_matrix,sealed,"3d_beamforming,wave_field_synthesis",85,20000,,,,,0.1deg_beam,,100,800,600,457,2025-02-05
+holoplot_md80s,holoplot,X1 MD80-S,current,install,matrix_array,"cone_18in,cone_5in,silk_dome_1_3in",direct_radiating_matrix,sealed,"3d_beamforming,wave_field_synthesis",26,20000,,,,,0.1deg_beam,,160,800,600,981,2025-02-05
+holoplot_md30,holoplot,X2 MD30,current,install,matrix_array,cone_2_5in,direct_radiating_matrix,sealed,"3d_beamforming,wave_field_synthesis",80,20000,,,,130,0.1deg_beam,,15.6,601,311,140,2025-02-05
+hsd_haymaker,hennessey_sound_design,Haymaker,current,touring,point_source,"cone_18,cone_10,compression_1in",horn_modular_waveguide,horn_loaded,modular_waveguide,50,20000,,,,,40-90x15,,70.3,686,813,686,2025-02-05
+hsd_sherman,hennessey_sound_design,Sherman,current,touring,sub,cone_24,,front_loaded_horn,horn_loaded,25,250,,29,,,omni,,200,762,1219,1829,2025-02-05
+hsd_battlehawk,hennessey_sound_design,Battlehawk,current,touring,sub,cone_21,,front_loaded_horn,horn_loaded,25,250,,,,,omni,,154,762,1524,1219,2025-02-05

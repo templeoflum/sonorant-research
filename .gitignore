@@ -1,0 +1,11 @@
+# Raw reference material (large, not version-tracked)
+reference_raw/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~

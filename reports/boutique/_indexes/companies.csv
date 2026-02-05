@@ -1,0 +1,9 @@
+company_id,name,founded_year,hq_country,composite_score,hf_clarity,directivity_control,sub_weight,psychoacoustic,small_room,patent_count_confirmed,independent_measurements,key_technology,last_audited
+danley_sound_labs,Danley Sound Labs,2005,USA,8.58,9,10,8,8,7,3,yes,Synergy Horn / Tapped Horn,2025-02-05
+fulcrum_acoustic,Fulcrum Acoustic,2008,USA,8.00,8,9,7,8,8,1,partial,Passive Cardioid / TQ Processing,2025-02-05
+funktion_one,Funktion-One,1992,UK,7.78,8,7,9,8,6,1,no,Turbo Mid-Range Loading,2025-02-05
+kv2_audio,KV2 Audio,2002,Czech Republic,7.77,9,8,6,8,8,0,no,Trans-Coil / Point Source,2025-02-05
+holoplot,HOLOPLOT,2011,Germany,7.73,8,10,5,10,4,1,no,Wave Field Synthesis / 3D Beamforming,2025-02-05
+pk_sound,PK Sound,2009,Canada,6.79,7,9,6,7,3,2,no,Robotic Beam Steering / CMI Waveguide,2025-02-05
+void_acoustics,Void Acoustics,2002,UK,6.55,6,6,8,7,5,0,no,Fibreglass Construction / HTT Thermal,2025-02-05
+hennessey_sound_design,Hennessey Sound Design,2014,USA,5.13,5,5,7,5,2,0,no,Horn-Loaded Festival Systems,2025-02-05

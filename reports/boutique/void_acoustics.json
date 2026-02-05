@@ -1,0 +1,263 @@
+{
+  "company_id": "void_acoustics",
+  "name": "Void Acoustics",
+  "aka": ["Void", "VOID"],
+  "founded_year": 2002,
+  "hq_country": "UK",
+  "hq_city": null,
+  "key_people": [
+    {"name": "Rog Mogale", "role": "Co-founder", "years": "2002-present"},
+    {"name": "Alex Skan", "role": "Co-founder", "years": "2002-present"}
+  ],
+  "ownership": "private",
+  "lineage": {
+    "predecessors": [],
+    "spin_offs": []
+  },
+  "philosophy": {
+    "tags": ["fiberglass_composite", "horn_loaded", "aesthetic_design", "htt_thermal", "pressure_gradient_porting"],
+    "summary": "Void pursues 'obsessive technical innovation and extraordinary design aesthetics' with the goal to 'move people through unforgettable, immersive sound.' Distinctive for sculptural, fibreglass-bodied speakers that prioritize visual impact alongside sonic performance — direct appeal to nightclub owners who value aesthetic differentiation.",
+    "notable_quotes": []
+  },
+  "supply_chain": {
+    "drivers_in_house": false,
+    "driver_vendors": null,
+    "amp_dsp_partners": null
+  },
+  "standards_cert": ["IP-55 (Cyclone series)"],
+  "ip_patents": [],
+  "products": {
+    "air_series": [
+      {
+        "model_id": "void_air_motion",
+        "name": "Air Motion",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["compression_1_5in", "cone_8", "cone_12"],
+          "hf_loading": ["os_cd_horn"],
+          "mf_loading": ["mid_horn"],
+          "lf_alignment": ["front_loaded_horn"],
+          "directivity_methods": ["constant_q_horn"],
+          "structure": ["composite"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 12, "count": 1},
+          {"position": "MF", "size_in": 8, "count": 1},
+          {"position": "HF", "exit_mm": 38, "count": 1}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [140, 20000],
+          "sensitivity_lf_db_1w": 106,
+          "sensitivity_hmf_db_1w": 108,
+          "max_spl_db_cont": 132,
+          "max_spl_db_peak": 138,
+          "power_handling_w": {"lf_aes": 500, "hmf_aes": 250},
+          "impedance_ohm_lf": 8,
+          "impedance_ohm_hmf": 8,
+          "directivity_nominal": "60x50",
+          "weight_kg": 35.4
+        }
+      },
+      {
+        "model_id": "void_air_array",
+        "name": "Air Array",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["compression_1in", "compression_3in_exit", "cone_12"],
+          "hf_loading": ["os_cd_horn"],
+          "lf_alignment": ["front_loaded_horn"],
+          "structure": ["composite"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 12, "count": 4},
+          {"position": "MF", "exit_mm": 76, "count": 4},
+          {"position": "HF", "exit_mm": 25, "count": 6}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [90, 26000],
+          "max_spl_db_cont": 143,
+          "power_handling_w": {"lf_total": 3600},
+          "weight_kg": 144.8,
+          "dimensions_mm": {"w": 944, "h": 1240, "d": 813}
+        }
+      }
+    ],
+    "incubus_series": [
+      {
+        "model_id": "void_incubus_sub",
+        "name": "Incubus Sub",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_21"],
+          "lf_alignment": ["bandpass_horn_hybrid"],
+          "structure": ["birch", "aluminum"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 21, "count": 3, "voicecoil_in": 6}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [29, 95],
+          "sensitivity_db_1w": 105,
+          "max_spl_db_cont": 142,
+          "max_spl_db_peak": 148,
+          "power_handling_w": {"aes": 6000},
+          "impedance_ohm_nom": "3x8",
+          "weight_kg": 214
+        }
+      }
+    ],
+    "stasys_series": [
+      {
+        "model_id": "void_stasys_xv2",
+        "name": "Stasys XV2",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_18"],
+          "lf_alignment": ["front_loaded_horn"],
+          "structure": ["birch"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 18, "count": 2}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [30, 180],
+          "sensitivity_db_1w": 104,
+          "max_spl_db_cont": 138,
+          "max_spl_db_peak": 144,
+          "power_handling_w": {"aes": 3200},
+          "impedance_ohm_nom": 4,
+          "weight_kg": 130
+        }
+      }
+    ],
+    "nexus_series": [
+      {
+        "model_id": "void_nexus_xl",
+        "name": "Nexus XL",
+        "status": "current",
+        "form_factor": "sub",
+        "topology": {
+          "radiators": ["cone_21"],
+          "lf_alignment": ["reflex"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 21, "count": 1}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [30, 150],
+          "sensitivity_db_1w": 104,
+          "max_spl_db_cont": 135,
+          "max_spl_db_peak": 141,
+          "power_handling_w": {"aes": 2000},
+          "impedance_ohm_nom": 8,
+          "weight_kg": 90
+        }
+      }
+    ],
+    "cyclone_series": [
+      {
+        "model_id": "void_cyclone_8",
+        "name": "Cyclone 8",
+        "status": "current",
+        "form_factor": "point_source",
+        "topology": {
+          "radiators": ["coax_cd", "cone_8"],
+          "lf_alignment": ["sealed"],
+          "structure": ["composite"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 8, "count": 1},
+          {"position": "HF", "exit_mm": 25, "count": 1, "type": "coaxial"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [70, 20000],
+          "sensitivity_db_1w": 94,
+          "max_spl_db_cont": 118,
+          "max_spl_db_peak": 121,
+          "power_handling_w": {"aes": 200},
+          "impedance_ohm_nom": 8,
+          "directivity_nominal": "90x90",
+          "weight_kg": 14,
+          "ip_rating": "IP-55"
+        }
+      }
+    ]
+  },
+  "case_studies": [
+    {
+      "case_id": "eden_ibiza_void",
+      "venue": {"name": "Eden Ibiza", "city": "Ibiza", "country": "Spain"},
+      "type": "club",
+      "capacity": null,
+      "system_layout": null,
+      "outcomes": ["Best sound I've ever heard - quote"],
+      "sources": ["https://voidacoustics.com/case-studies"]
+    },
+    {
+      "case_id": "dc10_ibiza_2010_void",
+      "venue": {"name": "DC10", "city": "Ibiza", "country": "Spain"},
+      "type": "club",
+      "capacity": null,
+      "system_layout": {
+        "mains": "8x Air Motion + 2x Air Ten (Terrace)",
+        "subs": "6x Stasys X"
+      },
+      "outcomes": ["Later replaced with Loud Professional system in 2012"],
+      "sources": ["https://www.fast-and-wide.com/more/wideangle/11986-case-study-ibiza-s-dc10"]
+    },
+    {
+      "case_id": "studio_338_london_void",
+      "venue": {"name": "Studio 338", "city": "London", "country": "UK"},
+      "type": "club",
+      "capacity": null,
+      "system_layout": null,
+      "outcomes": ["Decade-long evolution"],
+      "sources": ["https://voidacoustics.com/case-studies"]
+    }
+  ],
+  "r_and_d_relevance": {
+    "scores": {
+      "hf_clarity_transient": 6,
+      "directivity_control_imaging": 6,
+      "sub_weight_infrasonic": 8,
+      "psychoacoustic_potential": 7,
+      "small_room_viability": 5
+    },
+    "weights": {
+      "hf_clarity_transient": 0.23,
+      "directivity_control_imaging": 0.23,
+      "sub_weight_infrasonic": 0.23,
+      "psychoacoustic_potential": 0.20,
+      "small_room_viability": 0.11
+    },
+    "composite": 6.55,
+    "rationale": {
+      "hf_clarity_transient": "Horn-loaded compression drivers; limited independent measurement data",
+      "directivity_control_imaging": "Standard horn-loaded point source; controlled patterns but no advanced beam steering or coaxial coherence",
+      "sub_weight_infrasonic": "Incubus Sub reaches 29Hz with 6000W; Stasys XV2 reaches 30Hz",
+      "psychoacoustic_potential": "Club-focused design; immersive experience philosophy",
+      "small_room_viability": "Flagship products large format; Cyclone for smaller spaces"
+    }
+  },
+  "sources": [
+    {"title": "Void Acoustics About", "url": "https://voidacoustics.com/about", "type": "manufacturer", "confidence": "high"},
+    {"title": "Void Acoustics Incubus Series", "url": "https://voidacoustics.com/product-ranges/incubus-series", "type": "manufacturer", "confidence": "high"},
+    {"title": "Void Acoustics Case Studies", "url": "https://voidacoustics.com/case-studies", "type": "case_study", "confidence": "high"},
+    {"title": "KPODJ Incubus Sub", "url": "https://kpodj.com/void-acoustics-incubus-sub--triple-21-in-hybrid-horn-loaded-subwoofer-p-108822", "type": "datasheet", "confidence": "high"},
+    {"title": "KPODJ Stasys XV2", "url": "https://kpodj.com/void-acoustics-stasys-xv2--double-18-in-horn-loaded-subwoofer-p-109425", "type": "datasheet", "confidence": "high"},
+    {"title": "Void Acoustics Cyclone 8", "url": "https://voidacoustics.com/product-ranges/cyclone-series/cyclone-8", "type": "datasheet", "confidence": "high"},
+    {"title": "Void Acoustics Nexus XL", "url": "https://voidacoustics.com/product-ranges/nexus-series/nexus-xl", "type": "datasheet", "confidence": "high"},
+    {"title": "Void Acoustics Air Motion", "url": "https://voidacoustics.com/product-ranges/air-series/air-motion", "type": "datasheet", "confidence": "high"},
+    {"title": "Void Acoustics Stasys XV2", "url": "https://voidacoustics.com/product-ranges/stasys-series/stasys-xv2", "type": "datasheet", "confidence": "high"},
+    {"title": "Mixmag Ibiza Soundsystems", "url": "https://mixmag.net/feature/ibizas-best-soundsystems", "type": "press", "confidence": "med"},
+    {"title": "ProSoundWeb Nexus XL", "url": "https://www.prosoundweb.com/void-acoustics-to-debut-nexus-xl-low-frequency-enclosure-at-infocomm/", "type": "press", "confidence": "high"},
+    {"title": "Fast and Wide DC10", "url": "https://www.fast-and-wide.com/more/wideangle/11986-case-study-ibiza-s-dc10", "type": "case_study", "confidence": "high"}
+  ],
+  "spec_provenance_note": "All specifications from manufacturer product pages and distributor listings (KPODJ). No independent third-party measurements identified. Void publishes limited technical data; many specs are marketing-level only.",
+  "audit_notes": "Source count: 12 (meets threshold). Independent Measurements: NONE found. Patents Verified: NONE identified despite claimed innovations (HTT, Pressure Gradient Porting). Gaps: Air Array, Hyperfold, Arcline specs incomplete; no THD data; HTT technology undocumented. Provenance: All specs from manufacturer/distributor only. Note: DC10 installation was later replaced with Loud Professional system.",
+  "last_audited": "2025-02-05"
+}

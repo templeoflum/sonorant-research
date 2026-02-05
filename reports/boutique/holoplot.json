@@ -1,0 +1,253 @@
+{
+  "company_id": "holoplot",
+  "name": "HOLOPLOT",
+  "aka": ["Holoplot GmbH"],
+  "founded_year": 2011,
+  "hq_country": "Germany",
+  "hq_city": "Berlin",
+  "key_people": [
+    {"name": "Helmut Oellers", "role": "Founder, Tonmeister", "years": "2011-present"},
+    {"name": "Adrián Lara Moreno", "role": "Co-Founder, DSP Engineer", "years": "2011-present"},
+    {"name": "Roman Sick", "role": "CEO", "years": "2016-present"},
+    {"name": "Philippe Robineau", "role": "Acoustic Lead", "years": "—"},
+    {"name": "Evert Start", "role": "DSP Lead (WFS expertise)", "years": "—"}
+  ],
+  "ownership": "subsidiary (Sphere Entertainment Co., acquired May 2024)",
+  "lineage": {
+    "predecessors": ["Academic WFS research (TU Delft, TU Berlin)"],
+    "spin_offs": [],
+    "acquisitions": [{"by": "Sphere Entertainment Co.", "year": 2024, "notes": "Initial investment 2018, full acquisition May 2024"}]
+  },
+  "philosophy": {
+    "tags": ["wave_field_synthesis", "3d_beamforming", "matrix_array", "dsp_centric", "immersive_audio", "sound_field_control"],
+    "summary": "HOLOPLOT treats loudspeakers as software-defined platforms. Core principle: sound should be controllable like light. WFS reconstructs physical wavefronts rather than psychoacoustic phantom sources. 3D Audio-Beamforming steers multiple independent sound beams in both horizontal and vertical axes with 0.1deg precision. Each driver individually amplified and processed via FPGA.",
+    "notable_quotes": [
+      {
+        "quote": "What if sound could truly be controlled the way we can control light?",
+        "person": "HOLOPLOT",
+        "year": null,
+        "source": "https://holoplot.com/about-us"
+      },
+      {
+        "quote": "To make every seat the best seat.",
+        "person": "HOLOPLOT",
+        "year": null,
+        "source": "https://holoplot.com/"
+      }
+    ]
+  },
+  "supply_chain": {
+    "drivers_in_house": false,
+    "driver_vendors": null,
+    "amp_dsp_partners": ["FPGA (in-house design)"]
+  },
+  "standards_cert": [],
+  "ip_patents": [
+    {
+      "id": "EP3061271B1",
+      "year": 2018,
+      "title": "Wave Field Synthesis System",
+      "relevance": "Decentralized modular WFS; computational scalability independent of module count; 3D spatial reproduction",
+      "url": "https://patents.google.com/patent/EP3061271B1/en",
+      "inventors": ["Frank Stefan Schmidt", "Helmut Oellers"]
+    }
+  ],
+  "spec_provenance_note": "All specifications from manufacturer product pages. No independent third-party measurements identified. Patent verified via Google Patents.",
+  "products": {
+    "x1_series": [
+      {
+        "model_id": "holoplot_md96",
+        "name": "X1 Modul 96 (MD96)",
+        "status": "current",
+        "form_factor": "matrix_array",
+        "topology": {
+          "radiators": ["cone_5in", "silk_dome_1_3in"],
+          "hf_loading": ["direct_radiating_matrix"],
+          "lf_alignment": ["sealed"],
+          "directivity_methods": ["3d_beamforming", "wave_field_synthesis", "fpga_dsp"]
+        },
+        "drivers": [
+          {"position": "LF", "size_in": 5, "count": 18, "notes": "individually amplified"},
+          {"position": "HF", "size_in": 1.3, "count": 78, "type": "silk_dome", "notes": "individually amplified"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [85, 20000],
+          "bandwidth_hz_3db": [100, 18000],
+          "max_spl_lf_layer_db_peak": 142,
+          "max_spl_hf_layer_db_peak": 152,
+          "amplifier_channels": 96,
+          "beams_per_module": 12,
+          "beam_resolution_deg": 0.1,
+          "dimensions_mm": {"w": 800, "h": 600, "d": 457},
+          "weight_kg": 100,
+          "notes": "Two-way module; optimized parallel beam SPL; 7600 parametric EQ bands; 1100+ FIR filters"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      },
+      {
+        "model_id": "holoplot_md80s",
+        "name": "X1 Modul 80-S (MD80-S)",
+        "status": "current",
+        "form_factor": "matrix_array",
+        "topology": {
+          "radiators": ["cone_18in", "cone_5in", "silk_dome_1_3in"],
+          "hf_loading": ["direct_radiating_matrix"],
+          "lf_alignment": ["sealed"],
+          "directivity_methods": ["3d_beamforming", "wave_field_synthesis", "fpga_dsp"]
+        },
+        "drivers": [
+          {"position": "Sub", "size_in": 18, "count": 1, "type": "sensor_controlled"},
+          {"position": "LF", "size_in": 5, "count": 16, "notes": "individually amplified"},
+          {"position": "HF", "size_in": 1.3, "count": 64, "type": "silk_dome", "notes": "individually amplified"}
+        ],
+        "key_specs": {
+          "bandwidth_hz": [26, 20000],
+          "bandwidth_hz_3db": [30, 18000],
+          "max_spl_sub_db_peak_half_space": 137,
+          "max_spl_sub_db_peak_full_space": 131,
+          "max_spl_lf_layer_db_peak": 142,
+          "max_spl_hf_layer_db_peak": 152,
+          "amplifier_channels": 82,
+          "sub_amplifier_w_peak": 8500,
+          "beams_per_module": 12,
+          "beam_resolution_deg": 0.1,
+          "dimensions_mm": {"w": 800, "h": 600, "d": 981},
+          "weight_kg": 160,
+          "notes": "Three-way module with integrated subwoofer"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ],
+    "x2_series": [
+      {
+        "model_id": "holoplot_md30",
+        "name": "X2 Modul 30 (MD30)",
+        "status": "current",
+        "form_factor": "matrix_array",
+        "topology": {
+          "radiators": ["cone_2_5in"],
+          "hf_loading": ["direct_radiating_matrix"],
+          "lf_alignment": ["sealed"],
+          "directivity_methods": ["3d_beamforming", "wave_field_synthesis", "fpga_dsp"]
+        },
+        "drivers": [
+          {"position": "Full-range", "size_in": 2.5, "count": 30, "notes": "individually amplified"}
+        ],
+        "key_specs": {
+          "bandwidth_hz_standard": [110, 20000],
+          "bandwidth_hz_extended": [80, 20000],
+          "bandwidth_hz_3db_standard": [140, 18000],
+          "bandwidth_hz_3db_extended": [100, 18000],
+          "max_spl_db_peak_standard": 130,
+          "max_spl_db_peak_extended": 125,
+          "amplifier_channels": 30,
+          "beams_per_array": 12,
+          "power_w_max": 180,
+          "dimensions_mm": {"w": 601, "h": 311, "d": 140},
+          "weight_kg": 15.6,
+          "connectivity": "PoE++ (802.3bt Type 4), AES67, RAVENNA, optional Dante",
+          "notes": "Compact install module; dual PoE++; weather resistant"
+        },
+        "spec_provenance": "manufacturer",
+        "spec_confidence": "med"
+      }
+    ]
+  },
+  "case_studies": [
+    {
+      "case_id": "msg_sphere_las_vegas_holoplot",
+      "venue": {"name": "MSG Sphere", "city": "Las Vegas", "country": "USA"},
+      "type": "immersive_venue",
+      "capacity": 18600,
+      "system_layout": {
+        "total_modules": "~1600 X1 (permanently installed)",
+        "mobile_modules": 300,
+        "total_drivers": 167000,
+        "proscenium_array": "464 modules (272x MD96 + 192x MD80-S), 33.6m x 6.6m",
+        "environmental_arrays": "28 arrays (5x MD96 + 5x MD80-S each)",
+        "effects_arrays": "6 arrays (24x MD96 each)",
+        "surround_arrays": 71,
+        "total_weight_lbs": 400000
+      },
+      "outcomes": [
+        "World's largest integrated concert-grade audio system",
+        "110m throw to back row without delay lines",
+        "Hidden behind 16K LED media plane",
+        "Earplugs unnecessary despite high impact"
+      ],
+      "sources": ["https://www.holoplot.com/case-studies/msg-sphere-case-study"]
+    },
+    {
+      "case_id": "illuminarium_atlanta_holoplot",
+      "venue": {"name": "Illuminarium Experiences", "city": "Atlanta", "country": "USA"},
+      "type": "immersive_experience",
+      "capacity": null,
+      "system_layout": {
+        "config": "360deg immersive",
+        "modules": "52x MD96 + 7x MD80-S",
+        "notes": "Hidden behind micro-perforated projection screens"
+      },
+      "outcomes": [
+        "Virtual sound source positioning via WFS",
+        "Multiple independent audio zones",
+        "No visible loudspeaker localization"
+      ],
+      "sources": ["https://www.holoplot.com/case-studies/illuminarium-experiences-atlanta-case-study"]
+    },
+    {
+      "case_id": "area15_portal_holoplot",
+      "venue": {"name": "The Portal at AREA15", "city": "Las Vegas", "country": "USA"},
+      "type": "entertainment_venue",
+      "capacity": null,
+      "system_layout": {
+        "modules": "4x MD96 + 4x MD80-S (two arrays of 2+2)",
+        "array_height_ft": 25
+      },
+      "outcomes": [
+        "Wall reflection mitigation via beamforming",
+        "Consistent audio across venue"
+      ],
+      "sources": ["https://holoplot.com/insights/news/area15-utilizes-holoplot-x1-to-transport-visitors-through-space-and-time"]
+    }
+  ],
+  "r_and_d_relevance": {
+    "scores": {
+      "hf_clarity_transient": 8,
+      "directivity_control_imaging": 10,
+      "sub_weight_infrasonic": 5,
+      "psychoacoustic_potential": 10,
+      "small_room_viability": 4
+    },
+    "weights": {
+      "hf_clarity_transient": 0.23,
+      "directivity_control_imaging": 0.23,
+      "sub_weight_infrasonic": 0.23,
+      "psychoacoustic_potential": 0.20,
+      "small_room_viability": 0.11
+    },
+    "composite": 7.73,
+    "rationale": {
+      "hf_clarity_transient": "78 silk dome tweeters individually processed; FPGA-based FIR filtering; studio-grade quality claimed",
+      "directivity_control_imaging": "Best-in-class 3D beamforming + WFS; 0.1deg resolution; virtual source positioning; 12 independent beams",
+      "sub_weight_infrasonic": "MD80-S reaches 26Hz but module weighs 160kg; no standalone infrasonic optimization",
+      "psychoacoustic_potential": "WFS creates physically reconstructed wavefronts; virtual source localization; distance/direction perception",
+      "small_room_viability": "X2 (15.6kg) most viable but 80Hz minimum; X1 modules 100-160kg; large-scale venue focus"
+    }
+  },
+  "sources": [
+    {"title": "HOLOPLOT About Us", "url": "https://holoplot.com/about-us", "type": "manufacturer", "confidence": "high"},
+    {"title": "HOLOPLOT X1 Product Page", "url": "https://holoplot.com/products/systems/x1", "type": "datasheet", "confidence": "high"},
+    {"title": "HOLOPLOT X2 Product Page", "url": "https://www.holoplot.com/products/x2", "type": "datasheet", "confidence": "high"},
+    {"title": "audioXpress R&D Story", "url": "https://audioxpress.com/article/r-d-stories-design-and-development-of-the-holoplot-x1-matrix-array", "type": "press", "confidence": "high"},
+    {"title": "MSG Sphere Case Study", "url": "https://www.holoplot.com/case-studies/msg-sphere-case-study", "type": "case_study", "confidence": "high"},
+    {"title": "Illuminarium Case Study", "url": "https://www.holoplot.com/case-studies/illuminarium-experiences-atlanta-case-study", "type": "case_study", "confidence": "high"},
+    {"title": "Patent EP3061271B1", "url": "https://patents.google.com/patent/EP3061271B1/en", "type": "patent", "confidence": "high"},
+    {"title": "Sphere Acquisition Announcement", "url": "https://www.prnewswire.com/news-releases/sphere-entertainment-acquires-holoplot-302143439.html", "type": "press", "confidence": "high"},
+    {"title": "TIME Best Inventions 2022", "url": "https://time.com/collection/best-inventions-2022/6229122/holoplot-x1-matrix-array/", "type": "press", "confidence": "high"},
+    {"title": "IEEE Spectrum Beamforming", "url": "https://spectrum.ieee.org/holoplots-steerable-sound-beams", "type": "press", "confidence": "high"}
+  ],
+  "audit_notes": "Source count: 10 (meets threshold). NO INDEPENDENT MEASUREMENTS found - all specs manufacturer claims. Patent EP3061271B1 verified. WFS and beamforming technology extensively documented. Small-room viability limited by module size/weight; X2 more accessible but still 80Hz floor. Sphere Entertainment acquisition (May 2024) affects future independence. MSG Sphere deployment is world's largest concert sound system by driver count (167,000).",
+  "last_audited": "2025-02-05"
+}
