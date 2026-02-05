@@ -244,3 +244,30 @@ Chronological, append-only record of decisions, rationale, and findings.
 - Research queue priorities need user review and confirmation
 - VISION.md sonic priority ranking flagged as [NEEDS CONFIRMATION]
 - Symbolic identity / naming decisions still open
+
+---
+
+## Entry 8 — Process Fixes & Planning Log (Directive 006)
+
+**Date:** 2025-02-05
+**Phase:** Directive 006
+
+### What Happened
+
+- Introduced PLANNING_LOG.md as persistent record of planning-side decisions
+- Updated VISION.md to reclassify transportability as preference, not constraint
+- Established updated process norms: git operations included in directives, directives are self-contained, conversation logs are archive only
+
+### Key Decisions and Rationale
+
+- **Planning log introduced:** DEVLOG.md only captures CLI agent actions. Decisions made in planning conversations (scope changes, priority shifts, reclassifications) had no persistent home. PLANNING_LOG.md fills this gap. It is maintained by the planning instance and delivered alongside each directive.
+- **Transportability reclassified:** "Not fixed installation — transportable" was listed as a hard constraint in VISION.md. This was restricting research scope by implicitly filtering out heavy or fixed-installation designs. Reclassified as a design goal that does not limit the research phase.
+- **Process norms formalized:** CLI agent now authorized to commit and push. Directives are self-contained (no assumed prior context). Conversation logs in reference_raw/ are archive material — structured documents are canonical.
+
+### Surprises or Pattern Shifts
+
+None — this is purely process housekeeping.
+
+### Open Questions
+
+None.

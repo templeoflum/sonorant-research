@@ -47,7 +47,7 @@ Based on emphasis patterns in conversation logs:
 **Venue scale:**
 - 100–200 person capacity
 - Small rooms, outdoors, portable contexts
-- Not fixed installation — transportable
+- Transportability is valued but does not restrict research scope — the end product should move and set up easily, but research should not prematurely eliminate topologies based on weight or form factor
 
 **Form factor:**
 - Open to stackable or low-profile configurations

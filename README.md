@@ -17,6 +17,7 @@ This repo is **not** a product. It's the research layer — verified, source-cit
 | 003 | Score recalculation and correction pass | ✅ Complete |
 | 004 | Verification sweep + repository setup | ✅ Complete |
 | 005 | Vision extraction + knowledge base scaffolding | ✅ Complete |
+| 006 | Process fixes + planning log introduction | ✅ Complete |
 
 **Batch 1 Summary (8 boutique companies):**
 
@@ -39,7 +40,8 @@ This repo is **not** a product. It's the research layer — verified, source-cit
 sonorant-research/
 │
 ├── VISION.md                    # Experiential goals and design parameters
-├── DEVLOG.md                    # Chronological decision log (7 entries)
+├── PLANNING_LOG.md              # Planning-side decisions and rationale
+├── DEVLOG.md                    # Chronological decision log (8 entries)
 ├── STANDARDS.md                 # Uniform Data Standard (UDS) v1.1
 ├── AGENT_PLAN.md                # Research agent specification
 ├── README.md                    # This file
@@ -147,3 +149,4 @@ Path 1 is recommended before path 3 — design synthesis requires a verified kno
 | `DEVLOG.md` | Chronological record of every decision, correction, and finding |
 | `AGENT_PLAN.md` | Specification for the research agent that generates reports |
 | `knowledge/_research_queue.md` | 47 topics queued for verified investigation |
+| `PLANNING_LOG.md` | Why decisions were made — planning-side rationale and scope changes |
