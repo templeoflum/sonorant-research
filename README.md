@@ -30,12 +30,21 @@ Research archive for boutique loudspeaker company analysis. Private working repo
 ```
 sonorant-research/
 ├── README.md                           # This file
+├── VISION.md                           # Sonorant Sound experiential goals and design parameters
 ├── DEVLOG.md                           # Chronological decision log
+├── STANDARDS.md                        # Uniform Data Standard v1.1
 ├── AGENT_PLAN.md                       # Research agent specification
 ├── .gitignore
 │
-├── schema/
-│   └── uds_v1.md                       # STANDARDS — Uniform Data Standard v1.1
+├── knowledge/                          # Verified research entries (populated by future directives)
+│   ├── _research_queue.md              # Topics queued for investigation
+│   ├── acoustics/_README.md
+│   ├── transducers/_README.md
+│   ├── psychoacoustics/_README.md
+│   ├── enclosures/_README.md
+│   ├── signal_processing/_README.md
+│   ├── materials/_README.md
+│   └── references/_README.md
 │
 ├── reports/
 │   └── boutique/
@@ -52,13 +61,11 @@ sonorant-research/
 │           └── models.csv
 │
 ├── handoff/
-│   ├── 001_directive.md / 001_response.md
-│   ├── 002_directive.md / 002_response.md
-│   ├── 003_directive.md / 003_response.md
-│   └── 004_directive.md / 004_response.md
+│   ├── 001–005_directive.md / response.md
+│   └── (communication between Claude instances)
 │
-├── seed/
-│   └── (initial research seeds)
+├── schema/
+│   └── company_queue.jsonl             # Master list of companies to research
 │
 └── reference_raw/                      # .gitignored — unverified conversation logs
 ```
@@ -98,19 +105,8 @@ See `DEVLOG.md` for chronological record of decisions, rationale, and findings t
 
 ## What's Next
 
-Three candidate paths for Batch 2:
+1. **Populate knowledge base** — Begin verified research on high-priority queue topics (see `knowledge/_research_queue.md`)
 
-1. **Go wide** — Additional boutique manufacturers (Alcons, Turbosound, Radian, Amate Audio, Kling & Freitag, etc.)
+2. **Batch 2 company research** — Additional boutique manufacturers or major manufacturer baselines
 
-2. **Go deep** — Technology deep-dives:
-   - Passive cardioid design (Fulcrum patent analysis)
-   - Coaxial point source architectures
-   - TQ/FIR temporal correction
-   - Tapped horn loading
-   - Wave field synthesis fundamentals
-
-3. **Go reference** — Major manufacturers as comparison baselines:
-   - d&b audiotechnik
-   - L-Acoustics
-   - Meyer Sound
-   - JBL Professional
+3. **Design synthesis** — Cross-reference company report findings with knowledge base entries

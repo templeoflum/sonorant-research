@@ -202,3 +202,45 @@ Chronological, append-only record of decisions, rationale, and findings.
 - Patent verification essential — claims frequently exceed verifiable reality
 
 **Ready for Batch 2.**
+
+---
+
+## Entry 7 — Vision Extraction & Knowledge Base Scaffolding (Directive 005)
+
+**Date:** 2025-02-05
+**Phase:** Directive 005
+
+### What Happened
+- Extracted Sonorant Sound vision from conversation logs into VISION.md
+- Created knowledge base directory structure with entry templates and standards
+- Built research queue from conversation logs — extracted topics, not answers
+- Established three-layer triage for conversation log material:
+  - Vision statements → import to VISION.md
+  - Research questions → queue in _research_queue.md
+  - Speculative design output → leave in reference_raw/
+
+### Key Decisions and Rationale
+- **Vision document is statement of intent, not spec:** VISION.md captures experiential goals and design parameters without importing unverified technical claims.
+- **Knowledge base starts empty:** Directory structure with templates in place, but no content populated. This ensures all future entries meet source verification standards.
+- **Research queue extracts questions, not answers:** 47 topics identified for future verified research, organized by category and priority.
+
+### Extracted Statistics
+- **Topics extracted:** 47 across 7 categories
+- **Priority distribution:** 21 high, 20 medium, 6 low
+- **Category breakdown:** psychoacoustics (8), enclosures (12), transducers (9), acoustics (5), signal_processing (6), materials (3), references (4)
+
+### Notable Patterns Found
+- Psychoacoustics and enclosures dominate the research queue — aligns with Sonorant's experiential focus
+- Many topics reference the same foundational sources (Beranek, Leach, Klippel, Toole)
+- Passive cardioid design appears in multiple contexts (company research + knowledge queue)
+- Clear emphasis on small-room behavior throughout logs
+
+### Surprises or Pattern Shifts
+- Conversation logs contain extensive ChatGPT-generated "research" that cannot be trusted — substantial volume of plausible-sounding but unverified technical content
+- Vision statements are fairly consistent across logs; no major contradictions found
+- The "100-200 cap" venue scale appears repeatedly as a hard constraint
+
+### Open Questions
+- Research queue priorities need user review and confirmation
+- VISION.md sonic priority ranking flagged as [NEEDS CONFIRMATION]
+- Symbolic identity / naming decisions still open
