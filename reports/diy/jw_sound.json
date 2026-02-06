@@ -1,0 +1,146 @@
+{
+  "designer": {
+    "name": "JW Sound",
+    "primary_designer": "John White",
+    "location": "United States",
+    "website": "https://www.jwsound.live",
+    "store": "https://www.jwsound.live/store",
+    "active_since": "2018",
+    "business_model": ["free DIY plans", "donations", "3D-printed components", "flatpacks"]
+  },
+  "technology": {
+    "name": "Multiple Entry Horn (MEH)",
+    "type": "synergy horn / point-source horn",
+    "principle": "Multiple drivers sum acoustically through shared horn mouth, creating point-source behavior",
+    "benefits": ["coherent imaging", "controlled directivity", "high efficiency", "dynamic punch"],
+    "tradeoffs": ["complex construction", "requires active DSP", "needs subwoofer for full-range"],
+    "lineage": ["Danley Synergy Horn", "Scott Hinson Ultimate Loudspeaker"]
+  },
+  "models": [
+    {
+      "name": "JMOD",
+      "version": "v2",
+      "category": "top/full-range",
+      "configuration": "2x12\" + 1.4\" coaxial compression driver",
+      "coverage_degrees": "90x60",
+      "operating_range_hz": "80-18000",
+      "crossover_hz": [80, 370, 3500],
+      "crossover_type": "3-way active",
+      "sensitivity_db": 105,
+      "max_spl_peak_db": 130,
+      "dimensions_mm": null,
+      "weight_kg": null,
+      "recommended_drivers": {
+        "lf": ["B&C 12NDL76", "B&C 12NDL88", "18Sound 12NTLW3500"],
+        "hf": ["B&C DCX464"]
+      },
+      "plan_availability": "free PDF",
+      "build_components": ["CNC panels", "3D-printed mouth adaptor"]
+    },
+    {
+      "name": "JMOD-M",
+      "version": "v1",
+      "category": "array module",
+      "configuration": "medium format arrayed module",
+      "coverage_degrees": null,
+      "operating_range_hz": null,
+      "crossover_hz": null,
+      "crossover_type": "active",
+      "sensitivity_db": null,
+      "max_spl_peak_db": null,
+      "dimensions_mm": {"L": 1450, "W": 630, "H": 730},
+      "weight_kg": null,
+      "volume_note": "2.25x larger than JMOD 2.0",
+      "recommended_drivers": null,
+      "plan_availability": "not established",
+      "build_components": null
+    },
+    {
+      "name": "Solana",
+      "version": "v1",
+      "category": "compact monitor/PA",
+      "configuration": "multiple entry waveguide",
+      "coverage_degrees": null,
+      "operating_range_hz": null,
+      "crossover_hz": null,
+      "crossover_type": "active with FIR",
+      "sensitivity_db": null,
+      "max_spl_peak_db": null,
+      "dimensions_mm": {"L": 400, "W": 400, "H": 320},
+      "weight_kg": 12.7,
+      "construction": "12mm Baltic Birch, composite resin waveguide",
+      "mount": "35mm pole / M20 threaded combo",
+      "recommended_drivers": null,
+      "plan_availability": "free PDF",
+      "build_components": ["CNC panels", "composite waveguide"]
+    },
+    {
+      "name": "SAWMOD",
+      "version": "v1",
+      "category": "compact module",
+      "configuration": "1\" CD + 2x mid (4-6.5\") + 2x10\" rear-firing",
+      "coverage_degrees": null,
+      "operating_range_hz": "80-20000",
+      "crossover_hz": [350, 1200],
+      "crossover_type": "active",
+      "sensitivity_db": null,
+      "max_spl_peak_db": null,
+      "dimensions_mm": {"L": 115, "W": 260, "H": 360},
+      "weight_kg": null,
+      "recommended_drivers": {
+        "hf": ["1\" compression driver, 0deg exit"],
+        "mf": ["2x 4\", 5\", or 6.5\" midrange"],
+        "lf": ["2x 10\" rear-firing slotloaded"]
+      },
+      "plan_availability": "free PDF",
+      "build_components": ["CNC panels", "3D-printed waveguide"]
+    }
+  ],
+  "hosted_designs": [
+    {
+      "name": "SKRAM",
+      "designer": "Josh Ricci",
+      "category": "subwoofer",
+      "type": "6th order bandpass",
+      "notes": "Compact, high efficiency, ~30Hz extension"
+    },
+    {
+      "name": "SKHORN",
+      "designer": "Josh Ricci",
+      "category": "subwoofer",
+      "type": "quasi tapped horn",
+      "notes": "Higher output than SKRAM, larger cabinet"
+    }
+  ],
+  "drivers": {
+    "note": "JW Sound does not manufacture drivers; designs specify commercial drivers",
+    "recommended_lf": [
+      {"model": "12NDL76", "manufacturer": "B&C", "size": "12\"", "power_aes_w": 700, "sensitivity_db": 98},
+      {"model": "12NDL88", "manufacturer": "B&C", "size": "12\"", "power_aes_w": 800, "sensitivity_db": 98}
+    ],
+    "recommended_hf": [
+      {"model": "DCX464", "manufacturer": "B&C", "type": "1.4\" coaxial", "sensitivity_db": 111, "crossover_min_hz": 300}
+    ]
+  },
+  "dsp_requirements": {
+    "active_crossover": true,
+    "channels_per_speaker": 3,
+    "fir_filtering": "recommended for optimal performance",
+    "tools": ["FIR Designer", "SMAART"],
+    "platforms_community": ["Linea Research", "QSC Q-Sys", "Hypex FA253", "miniDSP"]
+  },
+  "mark_i_suitability": {
+    "overall": "excellent for tops",
+    "design_fit_notes": "JMOD offers exceptional coherence and clarity through MEH design. 90x60° directivity helps control room reflections. Requires subwoofer (pairs well with HOQS Type O). Build complexity is high — requires CNC, 3D printing, and DSP expertise. No dealer support network; community-supported DIY only.",
+    "recommended_pairing": "JMOD tops + HOQS Type O 2x18 subs",
+    "crossover_point": "80 Hz handoff between JMOD and subs"
+  },
+  "sources": [
+    {"url": "https://www.jwsound.live/designs", "provenance": "designer-published"},
+    {"url": "https://www.jwsound.live/designs/jmod", "provenance": "designer-published"},
+    {"url": "https://www.jwsound.live/designs/solana", "provenance": "designer-published"},
+    {"url": "https://www.diyaudio.com/community/threads/jmod-v2-build-thread.429672/", "provenance": "community-measured"},
+    {"url": "https://www.avsforum.com/threads/multiple-entry-horn.3315550/", "provenance": "community-measured"}
+  ],
+  "last_updated": "2025-02-06"
+}

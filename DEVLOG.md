@@ -354,3 +354,49 @@ None — aesthetic direction confirmed by project owner.
 
 - Several entries flag open questions about Sonorant-specific application (e.g., what group delay threshold is acceptable, what SPL is needed for tactile perception in target venues). These require either user input or further research.
 - The tapped horn and passive cardioid entries both note patent considerations for DIY implementation.
+
+---
+
+## Entry 11 — DIY Designer Profiles: HOQS & JW Sound (Directive 009)
+
+**Date:** 2025-02-06
+**Phase:** Directive 009
+
+### What Happened
+
+Created DIY designer profile format and produced two comprehensive profiles for Mark I planning: HOQS (Paraflex sub and mid-top catalog) and JW Sound (JMOD MEH tops).
+
+### Key Decisions and Rationale
+
+**New report category:** DIY designer profiles live in `reports/diy/` with a format distinct from the commercial company dossiers in `reports/boutique/`. No composite scoring — these profiles assess buildability and Mark I suitability rather than R&D relevance.
+
+**Mark I context:** The project is adding a near-term build track alongside long-term research. Mark I uses community-proven DIY designs built by an authorized HOQS dealer. This does not replace the research program — it runs in parallel as a learning platform.
+
+**Profile format:** Adapted template includes technology explanation, full product catalog with specs, driver lineup (for HOQS), build requirements, DSP needs, community track record, and Mark I suitability assessment. Source provenance uses DIY-specific tags (designer-published, community-measured).
+
+### Files Changed
+
+- reports/diy/_README.md — Created (DIY profile template)
+- reports/diy/hoqs.md — Created
+- reports/diy/hoqs.json — Created
+- reports/diy/jw_sound.md — Created
+- reports/diy/jw_sound.json — Created
+- DEVLOG.md — This entry
+
+### Surprises or Pattern Shifts
+
+**Paraflex loading is well-documented:** HOQS has extensive GitHub documentation and community support. The technology (compound quarterwave resonator) is distinct from the tapped horn and passive cardioid approaches already in the knowledge base — represents another viable sub topology.
+
+**JMOD complexity is significant:** While plans are free, building a JMOD requires CNC, 3D printing, and non-trivial DSP expertise. This is not a beginner project. The MEH coherence benefits are well-documented by community builders.
+
+**Complementary pairing:** JMOD (80Hz+) and HOQS Type O (35–100Hz) have overlapping coverage that enables clean crossover integration. Both designs prioritize transient response and efficiency — philosophically aligned with Sonorant goals.
+
+**Spec gaps:** Many HOQS and JW Sound specs are not published or vary by driver choice. Some fields marked "not established" pending builder consultation or direct measurement.
+
+### Open Questions
+
+- JMOD v2 status and specific improvements over v1
+- Exact cabinet dimensions and weights for JMOD
+- HOQS ELF variant specs for infrasonic extension below 35Hz
+- DSP preset availability vs. custom development requirement
+- Driver supply chain status for B&C 12NDL76/DCX464 and HOQS N185C

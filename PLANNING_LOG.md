@@ -4,7 +4,7 @@ The canonical record of current project decisions and their rationale. Organized
 
 For the chronological record of what was done, see DEVLOG.md.
 
-Maintained by the planning instance and delivered alongside each directive. The CLI agent replaces this file as the first step of every directive.
+Maintained by the planning instance and committed to the repo alongside each directive. The CLI agent reads it for context but does not modify it.
 
 ---
 
@@ -43,6 +43,23 @@ Maintained by the planning instance and delivered alongside each directive. The 
 | Directive | Date | Change |
 |-----------|------|--------|
 | 005 | 2025-02-05 | Extracted from conversation logs; confirmed by project owner |
+
+### Mark I Build Track
+
+**Current:** A near-term build track runs in parallel with the long-term research program. Mark I is a buildable system using community-proven DIY designs, intended as a learning platform — not the endgame. It uses the same 100–200 person venue constraint.
+
+Mark I components under consideration:
+- **Subs:** HOQS Paraflex Type O (2x18 primary candidate), built by authorized HOQS dealer
+- **Tops:** JW Sound JMOD MEH (v2 expected soon), a Danley-lineage Multiple Entry Horn
+- **Build approach:** Builder cuts from 4x8 plywood sheets, CNC flatpacks available
+
+**Rationale:** The research program is comprehensive but long-running. Mark I provides immediate hands-on experience with real acoustic behavior in real spaces. Design intuitions developed through Mark I will inform the long-term research priorities. The builder relationship provides access to HOQS designs and fabrication capability.
+
+Mark I does not constrain the research program. The long-term vision remains architecture-agnostic. Mark I is one data point, not a commitment to a topology.
+
+| Directive | Date | Change |
+|-----------|------|--------|
+| 009 | 2025-02-06 | Mark I build track established; HOQS and JW Sound profiles commissioned |
 
 ---
 
@@ -170,7 +187,7 @@ Manufacturer claims vs. independent measurements must be distinguished. Conflict
 
 ### Planning Log Maintenance
 
-**Current:** This file is maintained by the planning instance and delivered alongside each directive. The CLI agent replaces the file as the first step of every directive. Organized by domain with history tables, not chronological append-only.
+**Current:** This file is maintained by the planning instance and committed to the repo alongside each directive. The CLI agent reads it for context but does not modify it. Organized by domain with history tables, not chronological append-only.
 
 **Rationale:** DEVLOG.md captures what the CLI agent does. Planning-side decisions (scope changes, priority shifts, reclassifications) need a persistent home that shows current state clearly, with superseded decisions tracked in history rather than cluttering the main view.
 
@@ -197,3 +214,17 @@ Entry requirements:
 |-----------|------|--------|
 | 008 | 2025-02-05 | First population batch: 7 topics across psychoacoustics, enclosures, and acoustics |
 | 005 | 2025-02-05 | Knowledge base scaffolded; 47-topic research queue created |
+
+### Report Categories
+
+**Current:** Two report categories exist:
+
+- `reports/boutique/` — Commercial company dossiers using UDS scoring (5-criterion composite). For evaluating R&D relevance of commercial manufacturers.
+- `reports/diy/` — DIY designer profiles. No composite scoring. Focused on buildability, specs, driver options, community track record, and Mark I suitability assessment. Uses modified provenance tags (designer-published | community-measured | peer-reviewed | industry).
+
+**Rationale:** DIY plan designers (HOQS, JW Sound) serve a different function than commercial manufacturers (Danley, Fulcrum). Forcing them into the UDS framework would produce meaningless scores. What matters for Mark I planning is: what are the specs, what drivers work, how hard is the build, and does the community vouch for the results.
+
+| Directive | Date | Change |
+|-----------|------|--------|
+| 009 | 2025-02-06 | DIY designer profile format established; first two profiles (HOQS, JW Sound) commissioned |
+| 001 | 2025-02 | Boutique company format established with UDS scoring |
