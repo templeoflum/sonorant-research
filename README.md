@@ -19,6 +19,7 @@ This repo is **not** a product. It's the research layer — verified, source-cit
 | 005 | Vision extraction + knowledge base scaffolding | ✅ Complete |
 | 006 | Process fixes + planning log introduction | ✅ Complete |
 | 007 | Aesthetic identity overhaul + sonic priority restructure | ✅ Complete |
+| 008 | Architecture-agnostic cleanup + first knowledge base population | ✅ Complete |
 
 **Batch 1 Summary (8 boutique companies):**
 
@@ -39,46 +40,45 @@ This repo is **not** a product. It's the research layer — verified, source-cit
 
 ```
 sonorant-research/
-│
-├── VISION.md                    # Experiential goals and design parameters
-├── PLANNING_LOG.md              # Planning-side decisions and rationale
-├── DEVLOG.md                    # Chronological decision log (8 entries)
-├── STANDARDS.md                 # Uniform Data Standard (UDS) v1.1
-├── AGENT_PLAN.md                # Research agent specification
-├── README.md                    # This file
+├── README.md                           # This file
+├── VISION.md                           # Experiential goals, sonic priorities, aesthetic identity
+├── PLANNING_LOG.md                     # Current project decisions with rationale (domain-organized)
+├── DEVLOG.md                           # Chronological decision log
+├── AGENT_PLAN.md                       # Research agent specification
+├── STANDARDS.md                        # Uniform Data Standard reference
 ├── .gitignore
 │
-├── knowledge/                   # Verified research by domain
-│   ├── _research_queue.md       # 47 topics queued (21 high / 20 med / 6 low)
-│   ├── acoustics/               # Room behavior, radiation, modal analysis
-│   ├── transducers/             # Driver physics, motor theory, nonlinearities
-│   ├── psychoacoustics/         # Spatial hearing, immersion, tactile perception
-│   ├── enclosures/              # Loading types, alignments, cardioid techniques
-│   ├── signal_processing/       # Crossovers, FIR/IIR, phase alignment, TQ
-│   ├── materials/               # Cone, cabinet, magnet materials
-│   └── references/              # Verified bibliography index
+├── schema/
+│   └── uds_v1.md                       # UDS v1.1 — scoring, schemas, tech vocabulary
 │
-├── reports/                     # Company analysis (UDS-compliant)
+├── knowledge/
+│   ├── _research_queue.md              # 47-topic research queue across 7 domains
+│   ├── acoustics/                      # Room acoustics, radiation, modal behavior
+│   ├── enclosures/                     # Cabinet loading, alignment theory, horn design
+│   ├── transducers/                    # Driver physics, motor theory, diaphragm behavior
+│   ├── psychoacoustics/                # Human auditory perception, spatial hearing, immersion
+│   ├── signal_processing/              # Crossovers, DSP, phase alignment, FIR/IIR
+│   ├── materials/                      # Cone, cabinet, magnet materials and properties
+│   └── references/                     # Verified bibliography of key texts and papers
+│
+├── reports/
 │   └── boutique/
 │       ├── danley_sound_labs.md/.json
 │       ├── fulcrum_acoustic.md/.json
 │       ├── funktion_one.md/.json
-│       ├── kv2_audio.md/.json
+│       ├── hennessey_sound_design.md/.json
 │       ├── holoplot.md/.json
+│       ├── kv2_audio.md/.json
 │       ├── pk_sound.md/.json
 │       ├── void_acoustics.md/.json
-│       ├── hennessey_sound_design.md/.json
 │       └── _indexes/
 │           ├── companies.csv
 │           └── models.csv
 │
-├── schema/
-│   └── uds_v1.md                # UDS v1.1 — data standard for all records
-│
-├── handoff/                     # Directive/response pairs (inter-agent comms)
-│   └── 001–005_directive.md / response.md
-│
-└── reference_raw/               # .gitignored — unverified conversation logs
+└── handoff/
+    ├── 001_directive.md / 001_response.md
+    ├── ...
+    └── 008_directive.md / 008_response.md
 ```
 
 ## Research Domains

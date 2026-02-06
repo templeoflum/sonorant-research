@@ -312,3 +312,45 @@ The aesthetic identity analysis revealed that every project in the owner's portf
 ### Open Questions
 
 None — aesthetic direction confirmed by project owner.
+
+---
+
+## Entry 10 — Architecture-Agnostic Cleanup & First Knowledge Base Population (Directive 008)
+
+**Date:** 2025-02-05
+**Phase:** Directive 008
+
+### What Happened
+- Fixed MEH-biased language in AGENT_PLAN.md mission statement and research tracks
+- Updated README.md file structure to reflect current repo state
+- Populated first 7 knowledge base entries from verified research
+
+### Key Decisions and Rationale
+
+**AGENT_PLAN.md cleanup:** Mission statement referenced "MEH-based system" — contradicts the architecture-agnostic stance established since Directive 002. Fixed to reflect open topology. MEH research track reframed as one track among several topology-specific deep dives.
+
+**Knowledge base topic selection:** First batch chosen for foundational relevance — these 7 topics underpin decisions across all other research. Three from psychoacoustics (defining what "immersion" actually means), three from enclosures (the core sub and alignment decisions), one from acoustics (the room itself). Topics were selected so that future entries can reference these as established foundations.
+
+### Files Changed
+- AGENT_PLAN.md — Mission statement and Step 3 rewritten
+- README.md — File structure tree updated, status table updated
+- knowledge/psychoacoustics/envelopment_vs_localization.md — Created
+- knowledge/psychoacoustics/infrasonic_perception.md — Created
+- knowledge/psychoacoustics/precedence_effect.md — Created
+- knowledge/enclosures/passive_cardioid.md — Created
+- knowledge/enclosures/alignment_transient_tradeoffs.md — Created
+- knowledge/enclosures/tapped_horn.md — Created
+- knowledge/acoustics/small_room_modes.md — Created
+- knowledge/_research_queue.md — Updated (7 topics marked populated)
+- DEVLOG.md — This entry
+
+### Surprises or Pattern Shifts
+
+**Cross-topic connections:** Several topics reference each other naturally. The precedence effect entry connects to envelopment research (both deal with reflections). The alignment tradeoffs entry connects to tapped horn theory (both address transient response). The small room modes entry connects to all of them (the room affects everything). This interconnection validates the foundational selection — these topics form a coherent base layer.
+
+**Source quality variation:** Psychoacoustics topics have excellent peer-reviewed sources (Barron, Bradley, Møller, Toole). Enclosure topics rely more heavily on patents, industry sources, and community measurements. The Fulcrum patent is solid primary source; tapped horn theory relies significantly on DIY community (Ricci, diyAudio) which is high-quality but not peer-reviewed.
+
+### Open Questions
+
+- Several entries flag open questions about Sonorant-specific application (e.g., what group delay threshold is acceptable, what SPL is needed for tactile perception in target venues). These require either user input or further research.
+- The tapped horn and passive cardioid entries both note patent considerations for DIY implementation.

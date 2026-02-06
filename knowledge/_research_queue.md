@@ -2,7 +2,9 @@
 
 Topics extracted from conversation logs for future verified research. None of the explanations or claims from those logs are imported — only the questions and topic areas.
 
-**Total:** 47 topics queued across 7 categories
+**7 of 47 topics populated (Directive 008)**
+
+**Total:** 47 topics across 7 categories (7 populated, 40 queued)
 
 ---
 
@@ -22,7 +24,8 @@ Topics extracted from conversation logs for future verified research. None of th
 **Priority:** high
 **Why it matters:** Critical for small-venue (100-200 cap) deployment where early reflections dominate.
 **Source in logs:** Mentioned in context of small-room optimization
-**Status:** queued
+**Status:** populated
+**Entry:** `knowledge/psychoacoustics/precedence_effect.md`
 
 ### Envelopment vs. Localization — What Creates "Immersion"
 
@@ -30,7 +33,8 @@ Topics extracted from conversation logs for future verified research. None of th
 **Priority:** high
 **Why it matters:** Directly relevant to Sonorant's core experiential goal of "psychoacoustic immersion."
 **Source in logs:** Central theme throughout vision discussions
-**Status:** queued
+**Status:** populated
+**Entry:** `knowledge/psychoacoustics/envelopment_vs_localization.md`
 
 ### Infrasonic Perception (Sub-20Hz Tactile Response)
 
@@ -38,7 +42,8 @@ Topics extracted from conversation logs for future verified research. None of th
 **Priority:** high
 **Why it matters:** Sonorant explicitly targets "bass you feel not just hear" — understanding tactile perception threshold is essential.
 **Source in logs:** Discussed in context of "chest pressure" bass requirements
-**Status:** queued
+**Status:** populated
+**Entry:** `knowledge/psychoacoustics/infrasonic_perception.md`
 
 ### Loudness Perception Curves and Equal-Loudness Contours
 
@@ -82,7 +87,8 @@ Topics extracted from conversation logs for future verified research. None of th
 **Priority:** high
 **Why it matters:** Tapped horns (THAM15, MicroWrecker) repeatedly identified as candidates for infrasonic extension in compact format.
 **Source in logs:** Extensively discussed as sub design option; MicroWrecker noted for 25Hz extension
-**Status:** queued
+**Status:** populated
+**Entry:** `knowledge/enclosures/tapped_horn.md`
 
 ### Passive Cardioid Enclosure Techniques (Fulcrum Patent US10,123,111 B2)
 
@@ -90,7 +96,8 @@ Topics extracted from conversation logs for future verified research. None of th
 **Priority:** high
 **Why it matters:** Directional LF control without active arrays — directly applicable to small-room sub design.
 **Source in logs:** Identified in company research as "most directly relevant innovation"
-**Status:** queued
+**Status:** populated
+**Entry:** `knowledge/enclosures/passive_cardioid.md`
 
 ### Horn Flare Profiles: Exponential, Tractrix, Le Cléac'h, Oblate Spheroidal
 
@@ -138,7 +145,8 @@ Topics extracted from conversation logs for future verified research. None of th
 **Priority:** high
 **Why it matters:** Core decision for sub design affecting "fast transients" goal.
 **Source in logs:** Discussed extensively in enclosure comparison
-**Status:** queued
+**Status:** populated
+**Entry:** `knowledge/enclosures/alignment_transient_tradeoffs.md`
 
 ### Cubo 15/18 Design Analysis
 
@@ -258,7 +266,8 @@ Topics extracted from conversation logs for future verified research. None of th
 **Priority:** high
 **Why it matters:** Directly relevant to 100-200 cap venue deployment.
 **Source in logs:** Discussed in context of small-room optimization
-**Status:** queued
+**Status:** populated
+**Entry:** `knowledge/acoustics/small_room_modes.md`
 
 ### Boundary Coupling Effects at Low Frequencies
 

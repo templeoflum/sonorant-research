@@ -1,8 +1,8 @@
 # Sonorant Research — Planning Log
 
-The canonical record of **current project decisions** and their rationale. Organized by domain, not chronology. Each section shows what's currently true, why, and when it changed.
+The canonical record of current project decisions and their rationale. Organized by domain, not chronology. Each section shows what's currently true, why, and when it changed.
 
-For the chronological record of *what was done*, see DEVLOG.md.
+For the chronological record of what was done, see DEVLOG.md.
 
 Maintained by the planning instance and delivered alongside each directive. The CLI agent replaces this file as the first step of every directive.
 
@@ -12,19 +12,20 @@ Maintained by the planning instance and delivered alongside each directive. The 
 
 ### Research Scope
 
-**Current:** Research spans 7 knowledge domains, 160+ companies across all market segments, and a 47-topic research queue. No topology, architecture, or form factor is pre-excluded from investigation.
+**Current:** Research spans 7 knowledge domains, 160+ companies across all market segments, and a 47-topic research queue. No topology, architecture, or form factor is pre-excluded from investigation. System architecture is explicitly OPEN — determined by research, not assumption.
 
-**Rationale:** The experiential goals are locked; the physical means of achieving them are not. Premature filtering based on assumptions about weight, size, or complexity would eliminate potentially optimal solutions.
+**Rationale:** The experiential goals are locked; the physical means of achieving them are not. Premature filtering based on assumptions about weight, size, complexity, or preferred topology would eliminate potentially optimal solutions.
 
 | Directive | Date | Change |
 |-----------|------|--------|
+| 008 | 2025-02-05 | AGENT_PLAN.md cleaned of MEH-biased language in mission statement and research tracks; architecture-agnostic stance now consistent across all documents |
 | 006 | 2025-02-05 | README rewritten to reflect full scope (was "boutique loudspeaker analysis") |
 | 005 | 2025-02-05 | Knowledge base scaffolded across 7 domains; research queue extracted |
 | 001 | 2025-02 | Initial framing focused on boutique company research |
 
 ### Transportability
 
-**Current:** Transportability is a design *goal*, not a research *constraint*. The end product should move and set up easily, but research does not exclude topologies based on weight or form factor.
+**Current:** Transportability is a design goal, not a research constraint. The end product should move and set up easily, but research does not exclude topologies based on weight or form factor.
 
 **Rationale:** Listing transportability as a hard constraint was filtering research scope — discouraging investigation of heavy horn-loaded or concrete-baffle designs that might offer superior acoustic performance.
 
@@ -66,7 +67,7 @@ Maintained by the planning instance and delivered alongside each directive. The 
 
 ## Aesthetic Identity
 
-**Current:** 
+**Current:**
 - **Ethos:** Sonic liberation — sound as force, presence, and freedom
 - **Visual language:** Transduction instrumentation — physics-driven form, material honesty, exposed function as the only ornament
 - **Palette:** Oscilloscope lineage (Tektronix Gray, Bakelite Black, natural wood, brushed metal, functional indicators)
@@ -90,6 +91,7 @@ Maintained by the planning instance and delivered alongside each directive. The 
 ## Scoring Methodology
 
 **Current:** 5-criterion R&D relevance scoring system with weights:
+
 - hf_clarity_transient: 0.23
 - directivity_control_imaging: 0.23
 - sub_weight_infrasonic: 0.23
@@ -126,8 +128,8 @@ Scores evaluate company/product relevance to Sonorant's goals. They do not imply
 ### Verification Standards
 
 **Current:** Every claim in the knowledge base requires:
-- Source citation (resolvable URL + date)
-- Provenance tag (manufacturer | independent | derived)
+- Source citation (resolvable URL, DOI, or full bibliographic reference + date)
+- Provenance tag (peer-reviewed | textbook | industry | manufacturer | community)
 - Confidence rating (high | med | low)
 
 Manufacturer claims vs. independent measurements must be distinguished. Conflicts documented with both values.
@@ -136,6 +138,7 @@ Manufacturer claims vs. independent measurements must be distinguished. Conflict
 
 | Directive | Date | Change |
 |-----------|------|--------|
+| 008 | 2025-02-05 | Provenance tags expanded from 3-tier to 5-tier (peer-reviewed, textbook, industry, manufacturer, community) for knowledge base entries |
 | 005 | 2025-02-05 | Knowledge base entry standards established |
 | 002 | 2025-02 | Spec provenance tagging added to methodology |
 | 001 | 2025-02 | Hallucination problem identified; quarantine established |
@@ -175,3 +178,22 @@ Manufacturer claims vs. independent measurements must be distinguished. Conflict
 |-----------|------|--------|
 | 007 | 2025-02-05 | Restructured from chronological to domain-based organization |
 | 006 | 2025-02-05 | PLANNING_LOG.md created |
+
+### Knowledge Base Population
+
+**Current:** The knowledge base is populated in batches selected for foundational relevance — topics that other research builds on are prioritized first. Each batch is scoped in a directive with specific topic assignments, source requirements, and verification standards.
+
+Entry requirements:
+- Follows the template in each directory's `_README.md`
+- Minimum 3 sources per entry, preferring peer-reviewed and textbook sources
+- Every source tagged with provenance (peer-reviewed | textbook | industry | manufacturer | community)
+- Source conflicts documented with both values and provenance
+- Unknown = "not established" — never estimated or inferred
+- No content from conversation logs; all material from verified external sources
+
+**Rationale:** The knowledge base was scaffolded in Directive 005 but remained empty. Population order matters — foundational topics (psychoacoustic principles, enclosure physics, room behavior) must be established before design synthesis can draw on them meaningfully.
+
+| Directive | Date | Change |
+|-----------|------|--------|
+| 008 | 2025-02-05 | First population batch: 7 topics across psychoacoustics, enclosures, and acoustics |
+| 005 | 2025-02-05 | Knowledge base scaffolded; 47-topic research queue created |

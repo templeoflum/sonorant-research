@@ -88,7 +88,7 @@ The research exists to surface all viable architectures so the best one can be s
 | Asset | Action |
 |---|---|
 | ChatGPT-generated company dossiers | Keep template format. Discard all specific claims. Every fact must be re-sourced. |
-| Sonorant "Mark-I" rig spec | Treat as conceptual direction only. The separate kick-bin architecture is superseded by MEH approach. |
+| Sonorant "Mark-I" rig spec | Treat as conceptual direction only. Architecture decisions deferred to research phase. |
 | "Sacred Sonic Philology" research | Extract themes and search terms. Verify every specific claim. |
 
 ### ❌ Rebuild From Scratch
@@ -105,7 +105,7 @@ The research exists to surface all viable architectures so the best one can be s
 
 ### Mission
 
-Compile verified, source-grounded technical intelligence on loudspeaker companies, designs, patents, and deployments — structured for cross-brand comparison and synthesis into Sonorant Sound's MEH-based system.
+Compile verified, source-grounded technical intelligence on loudspeaker companies, designs, patents, and deployments — structured for cross-brand comparison and synthesis into Sonorant Sound's system design. No topology is pre-selected; the research exists to surface all viable architectures.
 
 ### Required Capabilities
 
@@ -208,8 +208,10 @@ Finalize JSON schema. Add product_line record, patent record, knowledge_article 
 8 companies, highest priority:
 Funktion-One, Void Acoustics, Danley Sound Labs, Fulcrum Acoustic, KV2 Audio, PK Sound, HOLOPLOT, Hennessey Sound Systems
 
-### Step 3: MEH-Specific Research Track
-Dedicated deep dive on multi-entry horn lineage:
+### Step 3: Topology-Specific Research Tracks
+Deep dives on candidate architectures identified through company research. MEH is one track among several:
+
+**MEH / Synergy Horn track:**
 - Danley Synergy Horn patents and theory
 - Scott Hinson's "The Ultimate Loudspeaker"
 - JW Sound JMOD (v1, v2, Solana, JMOD-M)
@@ -218,11 +220,18 @@ Dedicated deep dive on multi-entry horn lineage:
 - Bill Waslo's SynCalc modeling tool
 - Commercial MEH implementations (Danley SH50, SH96, SM60F, etc.)
 
+**Other topology tracks (equal priority):**
+- Passive cardioid sub techniques (Fulcrum patent US10,123,111 B2)
+- Coaxial point-source designs (Fulcrum, KV2 approach)
+- Tapped horn sub alignments (Ricci SKHORN/SKRAM, Danley)
+- Horn-loaded fullrange approaches (Funktion-One philosophy)
+- Active cardioid/gradient LF configurations
+
 ### Step 4: Sub Architecture Research
 Evaluate sub topologies against Sonorant's infrasonic goals:
 - Ricci's SKHORN / SKRAM (tapped horn, data-bass.com measured)
 - Paraflex variants (HOQS community)
-- Horn-loaded options for sensitivity matching with MEH tops
+- Horn-loaded options for sensitivity matching with horn-loaded tops
 - Cardioid configurations for small-room deployment
 
 ### Step 5: Synthesis (After Sufficient Data)
