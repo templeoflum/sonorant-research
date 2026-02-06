@@ -6,7 +6,7 @@
 
 ### What Sonorant Sound Is
 
-A boutique sound system for intimate communal gatherings (100–200 cap). Not a PA company — a sonic experience entity. The system is a presence with its own life, delivering hyper-real translation with sensual intimacy.
+A boutique sound system for intimate communal gatherings (100–200 cap). Not a PA company — a communal listening instrument designed to develop presence through use. The system is designed to deliver hyper-real translation of source material with sensual intimacy and visceral physical presence. Its character develops over time through modular evolution, operator relationship, and accumulated collective experience.
 
 ### Core Experiential Goals
 
@@ -17,13 +17,15 @@ A boutique sound system for intimate communal gatherings (100–200 cap). Not a 
 - **Stereo imaging**: Ultra-wide phantom image with stable center, spatial depth, envelopment
 - **Dynamic range over loudness**: Clarity at moderate levels, not volume for its own sake
 
-### Technical Design Priorities (Weighted)
+### Technical Design Priorities (Co-Equal, Weighted for Scoring Only)
 
 1. HF clarity & transient response (0.23)
 2. Directivity control & stereo imaging (0.23)
 3. Sub-weight & infrasonic extension (0.23)
 4. Psychoacoustic potential (0.20)
 5. Small-room viability (0.11)
+
+Note: Weights are used for R&D relevance scoring of company reports. They do not imply a priority ranking among experiential goals — all five are co-equal design constraints that must be satisfied simultaneously.
 
 ### System Architecture: OPEN — Determined by Research
 
@@ -59,8 +61,10 @@ The research exists to surface all viable architectures so the best one can be s
 
 ### Aesthetic & Identity
 
-- "Glitchy mythopoetic cyber surrealism"
-- The system awakens a viscerally more-real-than-real sonic activation
+- Ethos: Sonic liberation — sound as force, presence, and freedom
+- Visual language: Transduction instrumentation — physics-driven form, material honesty, exposed function as the only ornament
+- Palette: Oscilloscope lineage (Tektronix Gray, Bakelite Black, natural wood, brushed metal, functional accent indicators)
+- The system develops character through use — modular evolution, operator relationship, acoustic interaction, collective experience
 - Ranges from gentle to violent — shows you what you need, not what you expect
 - Genre coverage: hyperpop, UKG, jungle, old-school dubstep, intricate noise/soundscapes
 - Vinyl-ready, DJ gear, live instruments, open to surround (future)

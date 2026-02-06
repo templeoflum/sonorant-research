@@ -271,3 +271,44 @@ None — this is purely process housekeeping.
 ### Open Questions
 
 None.
+
+---
+
+## Entry 9 — Aesthetic Identity Overhaul (Directive 007)
+
+**Date:** 2025-02-05
+**Phase:** Directive 007
+
+### What Happened
+
+Complete replacement of aesthetic identity across VISION.md and AGENT_PLAN.md. Removed sonic priority ranking from VISION.md. Added "System as Evolving Instrument" framework. Restructured PLANNING_LOG.md from chronological to domain-based organization.
+
+### Key Decisions and Rationale
+
+**Mythic framing dropped entirely:** "Glitchy mythopoetic cyber surrealism," "sonic entity," "transcension engine" — all removed. These terms were inherited from early ChatGPT sessions and imported narrative language from a separate creative domain (MythOS). The project owner explicitly rejected "mythopoetic" and determined that "mythogenetic" also doesn't belong here.
+
+**New aesthetic framework established:**
+- Ethos: Sonic liberation
+- Visual language: Transduction instrumentation
+- Palette: Oscilloscope lineage
+- System animacy grounded in: modular evolution, operator relationship, acoustic interaction, collective experience
+
+**Sonic priorities restructured:** Five priorities presented as co-equal constraints rather than ranked hierarchy. Scoring weights retained for R&D evaluation only.
+
+**PLANNING_LOG restructured:** Changed from chronological append-only to domain-based organization. Each section now shows current state at top with history table tracking changes. Prevents coherence loss as superseded decisions accumulate.
+
+### Files Changed
+
+- VISION.md — Sections 2, 4 rewritten; Section 4.5 added
+- AGENT_PLAN.md — Distilled Vision, Aesthetic & Identity, and Technical Priorities sections updated
+- README.md — Project description updated
+- PLANNING_LOG.md — Complete restructure to domain-based format
+- DEVLOG.md — This entry
+
+### Surprises or Pattern Shifts
+
+The aesthetic identity analysis revealed that every project in the owner's portfolio performs the same core operation — applying pressure to a system until it reveals what was always there but invisible. Sonorant is the first project where this operation leaves the screen and enters physical space as air pressure. This insight grounded the "transduction instrumentation" visual language: the system's appearance should emerge from its own physics, not borrow from the digital or mythological domains.
+
+### Open Questions
+
+None — aesthetic direction confirmed by project owner.
